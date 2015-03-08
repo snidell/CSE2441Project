@@ -1,0 +1,8 @@
+|Selector21
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+S => inst3.IN1
+S => inst5.IN0
+A => inst.IN0
+
+

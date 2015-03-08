@@ -1,0 +1,1662 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "12/02/2014 21:12:15"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    partA
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module partA_vlg_sample_tst(
+	CLKcontroller,
+	CLRcontroller,
+	sampler_tx
+);
+input  CLKcontroller;
+input  CLRcontroller;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(CLKcontroller or CLRcontroller)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module partA_vlg_check_tst (
+	C0,
+	C1,
+	C2,
+	C3,
+	C4,
+	C5,
+	C6,
+	C7,
+	C8,
+	C9,
+	C10,
+	C11,
+	C42,
+	IR0,
+	IR1,
+	IR2,
+	IR3,
+	MAR0,
+	MAR1,
+	MAR2,
+	MAR3,
+	MARHex0,
+	MARHex1,
+	MARHex2,
+	MARHex3,
+	MARHex4,
+	MARHex5,
+	MARHex6,
+	MDIn0,
+	MDIn1,
+	MDIn2,
+	MDIn3,
+	MDinHex0,
+	MDinHex1,
+	MDinHex2,
+	MDinHex3,
+	MDinHex4,
+	MDinHex5,
+	MDinHex6,
+	MDoutHex0,
+	MDoutHex1,
+	MDoutHex2,
+	MDoutHex3,
+	MDoutHex4,
+	MDoutHex5,
+	MDoutHex6,
+	Mout0,
+	Mout1,
+	Mout2,
+	Mout3,
+	Operand0,
+	Operand1,
+	Operand2,
+	Operand3,
+	PC0,
+	PC1,
+	PC2,
+	PC3,
+	R0,
+	R1,
+	R2,
+	R3,
+	readWrite,
+	sampler_rx
+);
+input  C0;
+input  C1;
+input  C2;
+input  C3;
+input  C4;
+input  C5;
+input  C6;
+input  C7;
+input  C8;
+input  C9;
+input  C10;
+input  C11;
+input  C42;
+input  IR0;
+input  IR1;
+input  IR2;
+input  IR3;
+input  MAR0;
+input  MAR1;
+input  MAR2;
+input  MAR3;
+input  MARHex0;
+input  MARHex1;
+input  MARHex2;
+input  MARHex3;
+input  MARHex4;
+input  MARHex5;
+input  MARHex6;
+input  MDIn0;
+input  MDIn1;
+input  MDIn2;
+input  MDIn3;
+input  MDinHex0;
+input  MDinHex1;
+input  MDinHex2;
+input  MDinHex3;
+input  MDinHex4;
+input  MDinHex5;
+input  MDinHex6;
+input  MDoutHex0;
+input  MDoutHex1;
+input  MDoutHex2;
+input  MDoutHex3;
+input  MDoutHex4;
+input  MDoutHex5;
+input  MDoutHex6;
+input  Mout0;
+input  Mout1;
+input  Mout2;
+input  Mout3;
+input  Operand0;
+input  Operand1;
+input  Operand2;
+input  Operand3;
+input  PC0;
+input  PC1;
+input  PC2;
+input  PC3;
+input  R0;
+input  R1;
+input  R2;
+input  R3;
+input  readWrite;
+input sampler_rx;
+
+reg  C0_expected;
+reg  C1_expected;
+reg  C2_expected;
+reg  C3_expected;
+reg  C4_expected;
+reg  C5_expected;
+reg  C6_expected;
+reg  C7_expected;
+reg  C8_expected;
+reg  C9_expected;
+reg  C10_expected;
+reg  C11_expected;
+reg  C42_expected;
+reg  IR0_expected;
+reg  IR1_expected;
+reg  IR2_expected;
+reg  IR3_expected;
+reg  MAR0_expected;
+reg  MAR1_expected;
+reg  MAR2_expected;
+reg  MAR3_expected;
+reg  MARHex0_expected;
+reg  MARHex1_expected;
+reg  MARHex2_expected;
+reg  MARHex3_expected;
+reg  MARHex4_expected;
+reg  MARHex5_expected;
+reg  MARHex6_expected;
+reg  MDIn0_expected;
+reg  MDIn1_expected;
+reg  MDIn2_expected;
+reg  MDIn3_expected;
+reg  MDinHex0_expected;
+reg  MDinHex1_expected;
+reg  MDinHex2_expected;
+reg  MDinHex3_expected;
+reg  MDinHex4_expected;
+reg  MDinHex5_expected;
+reg  MDinHex6_expected;
+reg  MDoutHex0_expected;
+reg  MDoutHex1_expected;
+reg  MDoutHex2_expected;
+reg  MDoutHex3_expected;
+reg  MDoutHex4_expected;
+reg  MDoutHex5_expected;
+reg  MDoutHex6_expected;
+reg  Mout0_expected;
+reg  Mout1_expected;
+reg  Mout2_expected;
+reg  Mout3_expected;
+reg  Operand0_expected;
+reg  Operand1_expected;
+reg  Operand2_expected;
+reg  Operand3_expected;
+reg  PC0_expected;
+reg  PC1_expected;
+reg  PC2_expected;
+reg  PC3_expected;
+reg  R0_expected;
+reg  R1_expected;
+reg  R2_expected;
+reg  R3_expected;
+reg  readWrite_expected;
+
+reg  C0_prev;
+reg  C1_prev;
+reg  C2_prev;
+reg  C3_prev;
+reg  C4_prev;
+reg  C5_prev;
+reg  C6_prev;
+reg  C7_prev;
+reg  C8_prev;
+reg  C9_prev;
+reg  C10_prev;
+reg  C11_prev;
+reg  C42_prev;
+reg  IR0_prev;
+reg  IR1_prev;
+reg  IR2_prev;
+reg  IR3_prev;
+reg  MAR0_prev;
+reg  MAR1_prev;
+reg  MAR2_prev;
+reg  MAR3_prev;
+reg  MARHex0_prev;
+reg  MARHex1_prev;
+reg  MARHex2_prev;
+reg  MARHex3_prev;
+reg  MARHex4_prev;
+reg  MARHex5_prev;
+reg  MARHex6_prev;
+reg  MDIn0_prev;
+reg  MDIn1_prev;
+reg  MDIn2_prev;
+reg  MDIn3_prev;
+reg  MDinHex0_prev;
+reg  MDinHex1_prev;
+reg  MDinHex2_prev;
+reg  MDinHex3_prev;
+reg  MDinHex4_prev;
+reg  MDinHex5_prev;
+reg  MDinHex6_prev;
+reg  MDoutHex0_prev;
+reg  MDoutHex1_prev;
+reg  MDoutHex2_prev;
+reg  MDoutHex3_prev;
+reg  MDoutHex4_prev;
+reg  MDoutHex5_prev;
+reg  MDoutHex6_prev;
+reg  Mout0_prev;
+reg  Mout1_prev;
+reg  Mout2_prev;
+reg  Mout3_prev;
+reg  Operand0_prev;
+reg  Operand1_prev;
+reg  Operand2_prev;
+reg  Operand3_prev;
+reg  PC0_prev;
+reg  PC1_prev;
+reg  PC2_prev;
+reg  PC3_prev;
+reg  R0_prev;
+reg  R1_prev;
+reg  R2_prev;
+reg  R3_prev;
+reg  readWrite_prev;
+
+reg  C0_expected_prev;
+reg  C1_expected_prev;
+reg  C2_expected_prev;
+reg  C3_expected_prev;
+reg  C4_expected_prev;
+reg  C5_expected_prev;
+reg  C6_expected_prev;
+reg  C7_expected_prev;
+reg  C8_expected_prev;
+reg  C9_expected_prev;
+reg  C10_expected_prev;
+reg  C11_expected_prev;
+reg  C42_expected_prev;
+reg  IR0_expected_prev;
+reg  IR1_expected_prev;
+reg  IR2_expected_prev;
+reg  IR3_expected_prev;
+reg  MAR0_expected_prev;
+reg  MAR1_expected_prev;
+reg  MAR2_expected_prev;
+reg  MAR3_expected_prev;
+reg  MDIn0_expected_prev;
+reg  MDIn1_expected_prev;
+reg  MDIn2_expected_prev;
+reg  MDIn3_expected_prev;
+reg  Mout0_expected_prev;
+reg  Mout1_expected_prev;
+reg  Mout2_expected_prev;
+reg  Mout3_expected_prev;
+reg  Operand0_expected_prev;
+reg  Operand1_expected_prev;
+reg  Operand2_expected_prev;
+reg  Operand3_expected_prev;
+reg  PC0_expected_prev;
+reg  PC1_expected_prev;
+reg  PC2_expected_prev;
+reg  PC3_expected_prev;
+reg  readWrite_expected_prev;
+
+reg  last_C0_exp;
+reg  last_C1_exp;
+reg  last_C2_exp;
+reg  last_C3_exp;
+reg  last_C4_exp;
+reg  last_C5_exp;
+reg  last_C6_exp;
+reg  last_C7_exp;
+reg  last_C8_exp;
+reg  last_C9_exp;
+reg  last_C10_exp;
+reg  last_C11_exp;
+reg  last_C42_exp;
+reg  last_IR0_exp;
+reg  last_IR1_exp;
+reg  last_IR2_exp;
+reg  last_IR3_exp;
+reg  last_MAR0_exp;
+reg  last_MAR1_exp;
+reg  last_MAR2_exp;
+reg  last_MAR3_exp;
+reg  last_MDIn0_exp;
+reg  last_MDIn1_exp;
+reg  last_MDIn2_exp;
+reg  last_MDIn3_exp;
+reg  last_Mout0_exp;
+reg  last_Mout1_exp;
+reg  last_Mout2_exp;
+reg  last_Mout3_exp;
+reg  last_Operand0_exp;
+reg  last_Operand1_exp;
+reg  last_Operand2_exp;
+reg  last_Operand3_exp;
+reg  last_PC0_exp;
+reg  last_PC1_exp;
+reg  last_PC2_exp;
+reg  last_PC3_exp;
+reg  last_readWrite_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:63] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 63'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	C0_prev = C0;
+	C1_prev = C1;
+	C2_prev = C2;
+	C3_prev = C3;
+	C4_prev = C4;
+	C5_prev = C5;
+	C6_prev = C6;
+	C7_prev = C7;
+	C8_prev = C8;
+	C9_prev = C9;
+	C10_prev = C10;
+	C11_prev = C11;
+	C42_prev = C42;
+	IR0_prev = IR0;
+	IR1_prev = IR1;
+	IR2_prev = IR2;
+	IR3_prev = IR3;
+	MAR0_prev = MAR0;
+	MAR1_prev = MAR1;
+	MAR2_prev = MAR2;
+	MAR3_prev = MAR3;
+	MARHex0_prev = MARHex0;
+	MARHex1_prev = MARHex1;
+	MARHex2_prev = MARHex2;
+	MARHex3_prev = MARHex3;
+	MARHex4_prev = MARHex4;
+	MARHex5_prev = MARHex5;
+	MARHex6_prev = MARHex6;
+	MDIn0_prev = MDIn0;
+	MDIn1_prev = MDIn1;
+	MDIn2_prev = MDIn2;
+	MDIn3_prev = MDIn3;
+	MDinHex0_prev = MDinHex0;
+	MDinHex1_prev = MDinHex1;
+	MDinHex2_prev = MDinHex2;
+	MDinHex3_prev = MDinHex3;
+	MDinHex4_prev = MDinHex4;
+	MDinHex5_prev = MDinHex5;
+	MDinHex6_prev = MDinHex6;
+	MDoutHex0_prev = MDoutHex0;
+	MDoutHex1_prev = MDoutHex1;
+	MDoutHex2_prev = MDoutHex2;
+	MDoutHex3_prev = MDoutHex3;
+	MDoutHex4_prev = MDoutHex4;
+	MDoutHex5_prev = MDoutHex5;
+	MDoutHex6_prev = MDoutHex6;
+	Mout0_prev = Mout0;
+	Mout1_prev = Mout1;
+	Mout2_prev = Mout2;
+	Mout3_prev = Mout3;
+	Operand0_prev = Operand0;
+	Operand1_prev = Operand1;
+	Operand2_prev = Operand2;
+	Operand3_prev = Operand3;
+	PC0_prev = PC0;
+	PC1_prev = PC1;
+	PC2_prev = PC2;
+	PC3_prev = PC3;
+	R0_prev = R0;
+	R1_prev = R1;
+	R2_prev = R2;
+	R3_prev = R3;
+	readWrite_prev = readWrite;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	C0_expected_prev = C0_expected;
+	C1_expected_prev = C1_expected;
+	C2_expected_prev = C2_expected;
+	C3_expected_prev = C3_expected;
+	C4_expected_prev = C4_expected;
+	C5_expected_prev = C5_expected;
+	C6_expected_prev = C6_expected;
+	C7_expected_prev = C7_expected;
+	C8_expected_prev = C8_expected;
+	C9_expected_prev = C9_expected;
+	C10_expected_prev = C10_expected;
+	C11_expected_prev = C11_expected;
+	C42_expected_prev = C42_expected;
+	IR0_expected_prev = IR0_expected;
+	IR1_expected_prev = IR1_expected;
+	IR2_expected_prev = IR2_expected;
+	IR3_expected_prev = IR3_expected;
+	MAR0_expected_prev = MAR0_expected;
+	MAR1_expected_prev = MAR1_expected;
+	MAR2_expected_prev = MAR2_expected;
+	MAR3_expected_prev = MAR3_expected;
+	MDIn0_expected_prev = MDIn0_expected;
+	MDIn1_expected_prev = MDIn1_expected;
+	MDIn2_expected_prev = MDIn2_expected;
+	MDIn3_expected_prev = MDIn3_expected;
+	Mout0_expected_prev = Mout0_expected;
+	Mout1_expected_prev = Mout1_expected;
+	Mout2_expected_prev = Mout2_expected;
+	Mout3_expected_prev = Mout3_expected;
+	Operand0_expected_prev = Operand0_expected;
+	Operand1_expected_prev = Operand1_expected;
+	Operand2_expected_prev = Operand2_expected;
+	Operand3_expected_prev = Operand3_expected;
+	PC0_expected_prev = PC0_expected;
+	PC1_expected_prev = PC1_expected;
+	PC2_expected_prev = PC2_expected;
+	PC3_expected_prev = PC3_expected;
+	readWrite_expected_prev = readWrite_expected;
+end
+
+
+
+// expected MAR0
+initial
+begin
+	MAR0_expected = 1'bX;
+	MAR0_expected = #1399000 1'b0;
+	MAR0_expected = #1000 1'bX;
+end 
+
+// expected MAR1
+initial
+begin
+	MAR1_expected = 1'bX;
+	MAR1_expected = #1399000 1'b0;
+	MAR1_expected = #1000 1'bX;
+end 
+
+// expected MAR2
+initial
+begin
+	MAR2_expected = 1'bX;
+	MAR2_expected = #1399000 1'b0;
+	MAR2_expected = #1000 1'bX;
+end 
+
+// expected MAR3
+initial
+begin
+	MAR3_expected = 1'bX;
+	MAR3_expected = #1399000 1'b0;
+	MAR3_expected = #1000 1'bX;
+end 
+
+// expected MDIn0
+initial
+begin
+	MDIn0_expected = 1'bX;
+	MDIn0_expected = #1399000 1'b0;
+	MDIn0_expected = #1000 1'bX;
+end 
+
+// expected MDIn1
+initial
+begin
+	MDIn1_expected = 1'bX;
+	MDIn1_expected = #1399000 1'b0;
+	MDIn1_expected = #1000 1'bX;
+end 
+
+// expected MDIn2
+initial
+begin
+	MDIn2_expected = 1'bX;
+	MDIn2_expected = #1399000 1'b0;
+	MDIn2_expected = #1000 1'bX;
+end 
+
+// expected MDIn3
+initial
+begin
+	MDIn3_expected = 1'bX;
+	MDIn3_expected = #1399000 1'b0;
+	MDIn3_expected = #1000 1'bX;
+end 
+
+// expected Mout0
+initial
+begin
+	Mout0_expected = 1'bX;
+	Mout0_expected = #1399000 1'b0;
+	Mout0_expected = #1000 1'bX;
+end 
+
+// expected Mout1
+initial
+begin
+	Mout1_expected = 1'bX;
+	Mout1_expected = #1399000 1'b0;
+	Mout1_expected = #1000 1'bX;
+end 
+
+// expected Mout2
+initial
+begin
+	Mout2_expected = 1'bX;
+	Mout2_expected = #1399000 1'b0;
+	Mout2_expected = #1000 1'bX;
+end 
+
+// expected Mout3
+initial
+begin
+	Mout3_expected = 1'bX;
+	Mout3_expected = #1399000 1'b0;
+	Mout3_expected = #1000 1'bX;
+end 
+
+// expected Operand3
+initial
+begin
+	Operand3_expected = 1'bX;
+end 
+
+// expected Operand2
+initial
+begin
+	Operand2_expected = 1'bX;
+end 
+
+// expected Operand1
+initial
+begin
+	Operand1_expected = 1'bX;
+end 
+
+// expected Operand0
+initial
+begin
+	Operand0_expected = 1'bX;
+end 
+
+// expected C0
+initial
+begin
+	C0_expected = 1'bX;
+	C0_expected = #1399000 1'b0;
+	C0_expected = #1000 1'bX;
+end 
+
+// expected C2
+initial
+begin
+	C2_expected = 1'bX;
+	C2_expected = #1399000 1'b0;
+	C2_expected = #1000 1'bX;
+end 
+
+// expected C3
+initial
+begin
+	C3_expected = 1'bX;
+	C3_expected = #1399000 1'b0;
+	C3_expected = #1000 1'bX;
+end 
+
+// expected C4
+initial
+begin
+	C4_expected = 1'bX;
+	C4_expected = #1399000 1'b0;
+	C4_expected = #1000 1'bX;
+end 
+
+// expected C7
+initial
+begin
+	C7_expected = 1'bX;
+	C7_expected = #1399000 1'b0;
+	C7_expected = #1000 1'bX;
+end 
+
+// expected C8
+initial
+begin
+	C8_expected = 1'bX;
+	C8_expected = #1399000 1'b0;
+	C8_expected = #1000 1'bX;
+end 
+
+// expected C9
+initial
+begin
+	C9_expected = 1'bX;
+	C9_expected = #1399000 1'b0;
+	C9_expected = #1000 1'bX;
+end 
+
+// expected C42
+initial
+begin
+	C42_expected = 1'bX;
+	C42_expected = #1399000 1'b0;
+	C42_expected = #1000 1'bX;
+end 
+
+// expected C1
+initial
+begin
+	C1_expected = 1'bX;
+	C1_expected = #1399000 1'b0;
+	C1_expected = #1000 1'bX;
+end 
+
+// expected C5
+initial
+begin
+	C5_expected = 1'bX;
+	C5_expected = #1399000 1'b0;
+	C5_expected = #1000 1'bX;
+end 
+
+// expected C6
+initial
+begin
+	C6_expected = 1'bX;
+	C6_expected = #1399000 1'b0;
+	C6_expected = #1000 1'bX;
+end 
+
+// expected C10
+initial
+begin
+	C10_expected = 1'bX;
+	C10_expected = #1399000 1'b0;
+	C10_expected = #1000 1'bX;
+end 
+
+// expected C11
+initial
+begin
+	C11_expected = 1'bX;
+	C11_expected = #1399000 1'b0;
+	C11_expected = #1000 1'bX;
+end 
+
+// expected IR0
+initial
+begin
+	IR0_expected = 1'bX;
+	IR0_expected = #1399000 1'b0;
+	IR0_expected = #1000 1'bX;
+end 
+
+// expected IR1
+initial
+begin
+	IR1_expected = 1'bX;
+	IR1_expected = #1399000 1'b0;
+	IR1_expected = #1000 1'bX;
+end 
+
+// expected IR2
+initial
+begin
+	IR2_expected = 1'bX;
+end 
+
+// expected IR3
+initial
+begin
+	IR3_expected = 1'bX;
+end 
+
+// expected PC0
+initial
+begin
+	PC0_expected = 1'bX;
+end 
+
+// expected PC1
+initial
+begin
+	PC1_expected = 1'bX;
+end 
+
+// expected PC2
+initial
+begin
+	PC2_expected = 1'bX;
+end 
+
+// expected PC3
+initial
+begin
+	PC3_expected = 1'bX;
+end 
+
+// expected readWrite
+initial
+begin
+	readWrite_expected = 1'bX;
+end 
+// generate trigger
+always @(C0_expected or C0 or C1_expected or C1 or C2_expected or C2 or C3_expected or C3 or C4_expected or C4 or C5_expected or C5 or C6_expected or C6 or C7_expected or C7 or C8_expected or C8 or C9_expected or C9 or C10_expected or C10 or C11_expected or C11 or C42_expected or C42 or IR0_expected or IR0 or IR1_expected or IR1 or IR2_expected or IR2 or IR3_expected or IR3 or MAR0_expected or MAR0 or MAR1_expected or MAR1 or MAR2_expected or MAR2 or MAR3_expected or MAR3 or MARHex0_expected or MARHex0 or MARHex1_expected or MARHex1 or MARHex2_expected or MARHex2 or MARHex3_expected or MARHex3 or MARHex4_expected or MARHex4 or MARHex5_expected or MARHex5 or MARHex6_expected or MARHex6 or MDIn0_expected or MDIn0 or MDIn1_expected or MDIn1 or MDIn2_expected or MDIn2 or MDIn3_expected or MDIn3 or MDinHex0_expected or MDinHex0 or MDinHex1_expected or MDinHex1 or MDinHex2_expected or MDinHex2 or MDinHex3_expected or MDinHex3 or MDinHex4_expected or MDinHex4 or MDinHex5_expected or MDinHex5 or MDinHex6_expected or MDinHex6 or MDoutHex0_expected or MDoutHex0 or MDoutHex1_expected or MDoutHex1 or MDoutHex2_expected or MDoutHex2 or MDoutHex3_expected or MDoutHex3 or MDoutHex4_expected or MDoutHex4 or MDoutHex5_expected or MDoutHex5 or MDoutHex6_expected or MDoutHex6 or Mout0_expected or Mout0 or Mout1_expected or Mout1 or Mout2_expected or Mout2 or Mout3_expected or Mout3 or Operand0_expected or Operand0 or Operand1_expected or Operand1 or Operand2_expected or Operand2 or Operand3_expected or Operand3 or PC0_expected or PC0 or PC1_expected or PC1 or PC2_expected or PC2 or PC3_expected or PC3 or R0_expected or R0 or R1_expected or R1 or R2_expected or R2 or R3_expected or R3 or readWrite_expected or readWrite)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected C0 = %b | expected C1 = %b | expected C2 = %b | expected C3 = %b | expected C4 = %b | expected C5 = %b | expected C6 = %b | expected C7 = %b | expected C8 = %b | expected C9 = %b | expected C10 = %b | expected C11 = %b | expected C42 = %b | expected IR0 = %b | expected IR1 = %b | expected IR2 = %b | expected IR3 = %b | expected MAR0 = %b | expected MAR1 = %b | expected MAR2 = %b | expected MAR3 = %b | expected MARHex0 = %b | expected MARHex1 = %b | expected MARHex2 = %b | expected MARHex3 = %b | expected MARHex4 = %b | expected MARHex5 = %b | expected MARHex6 = %b | expected MDIn0 = %b | expected MDIn1 = %b | expected MDIn2 = %b | expected MDIn3 = %b | expected MDinHex0 = %b | expected MDinHex1 = %b | expected MDinHex2 = %b | expected MDinHex3 = %b | expected MDinHex4 = %b | expected MDinHex5 = %b | expected MDinHex6 = %b | expected MDoutHex0 = %b | expected MDoutHex1 = %b | expected MDoutHex2 = %b | expected MDoutHex3 = %b | expected MDoutHex4 = %b | expected MDoutHex5 = %b | expected MDoutHex6 = %b | expected Mout0 = %b | expected Mout1 = %b | expected Mout2 = %b | expected Mout3 = %b | expected Operand0 = %b | expected Operand1 = %b | expected Operand2 = %b | expected Operand3 = %b | expected PC0 = %b | expected PC1 = %b | expected PC2 = %b | expected PC3 = %b | expected R0 = %b | expected R1 = %b | expected R2 = %b | expected R3 = %b | expected readWrite = %b | ",C0_expected_prev,C1_expected_prev,C2_expected_prev,C3_expected_prev,C4_expected_prev,C5_expected_prev,C6_expected_prev,C7_expected_prev,C8_expected_prev,C9_expected_prev,C10_expected_prev,C11_expected_prev,C42_expected_prev,IR0_expected_prev,IR1_expected_prev,IR2_expected_prev,IR3_expected_prev,MAR0_expected_prev,MAR1_expected_prev,MAR2_expected_prev,MAR3_expected_prev,MARHex0_expected_prev,MARHex1_expected_prev,MARHex2_expected_prev,MARHex3_expected_prev,MARHex4_expected_prev,MARHex5_expected_prev,MARHex6_expected_prev,MDIn0_expected_prev,MDIn1_expected_prev,MDIn2_expected_prev,MDIn3_expected_prev,MDinHex0_expected_prev,MDinHex1_expected_prev,MDinHex2_expected_prev,MDinHex3_expected_prev,MDinHex4_expected_prev,MDinHex5_expected_prev,MDinHex6_expected_prev,MDoutHex0_expected_prev,MDoutHex1_expected_prev,MDoutHex2_expected_prev,MDoutHex3_expected_prev,MDoutHex4_expected_prev,MDoutHex5_expected_prev,MDoutHex6_expected_prev,Mout0_expected_prev,Mout1_expected_prev,Mout2_expected_prev,Mout3_expected_prev,Operand0_expected_prev,Operand1_expected_prev,Operand2_expected_prev,Operand3_expected_prev,PC0_expected_prev,PC1_expected_prev,PC2_expected_prev,PC3_expected_prev,R0_expected_prev,R1_expected_prev,R2_expected_prev,R3_expected_prev,readWrite_expected_prev);
+	$display("| real C0 = %b | real C1 = %b | real C2 = %b | real C3 = %b | real C4 = %b | real C5 = %b | real C6 = %b | real C7 = %b | real C8 = %b | real C9 = %b | real C10 = %b | real C11 = %b | real C42 = %b | real IR0 = %b | real IR1 = %b | real IR2 = %b | real IR3 = %b | real MAR0 = %b | real MAR1 = %b | real MAR2 = %b | real MAR3 = %b | real MARHex0 = %b | real MARHex1 = %b | real MARHex2 = %b | real MARHex3 = %b | real MARHex4 = %b | real MARHex5 = %b | real MARHex6 = %b | real MDIn0 = %b | real MDIn1 = %b | real MDIn2 = %b | real MDIn3 = %b | real MDinHex0 = %b | real MDinHex1 = %b | real MDinHex2 = %b | real MDinHex3 = %b | real MDinHex4 = %b | real MDinHex5 = %b | real MDinHex6 = %b | real MDoutHex0 = %b | real MDoutHex1 = %b | real MDoutHex2 = %b | real MDoutHex3 = %b | real MDoutHex4 = %b | real MDoutHex5 = %b | real MDoutHex6 = %b | real Mout0 = %b | real Mout1 = %b | real Mout2 = %b | real Mout3 = %b | real Operand0 = %b | real Operand1 = %b | real Operand2 = %b | real Operand3 = %b | real PC0 = %b | real PC1 = %b | real PC2 = %b | real PC3 = %b | real R0 = %b | real R1 = %b | real R2 = %b | real R3 = %b | real readWrite = %b | ",C0_prev,C1_prev,C2_prev,C3_prev,C4_prev,C5_prev,C6_prev,C7_prev,C8_prev,C9_prev,C10_prev,C11_prev,C42_prev,IR0_prev,IR1_prev,IR2_prev,IR3_prev,MAR0_prev,MAR1_prev,MAR2_prev,MAR3_prev,MARHex0_prev,MARHex1_prev,MARHex2_prev,MARHex3_prev,MARHex4_prev,MARHex5_prev,MARHex6_prev,MDIn0_prev,MDIn1_prev,MDIn2_prev,MDIn3_prev,MDinHex0_prev,MDinHex1_prev,MDinHex2_prev,MDinHex3_prev,MDinHex4_prev,MDinHex5_prev,MDinHex6_prev,MDoutHex0_prev,MDoutHex1_prev,MDoutHex2_prev,MDoutHex3_prev,MDoutHex4_prev,MDoutHex5_prev,MDoutHex6_prev,Mout0_prev,Mout1_prev,Mout2_prev,Mout3_prev,Operand0_prev,Operand1_prev,Operand2_prev,Operand3_prev,PC0_prev,PC1_prev,PC2_prev,PC3_prev,R0_prev,R1_prev,R2_prev,R3_prev,readWrite_prev);
+`endif
+	if (
+		( C0_expected_prev !== 1'bx ) && ( C0_prev !== C0_expected_prev )
+		&& ((C0_expected_prev !== last_C0_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C0_expected_prev);
+		$display ("     Real value = %b", C0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_C0_exp = C0_expected_prev;
+	end
+	if (
+		( C1_expected_prev !== 1'bx ) && ( C1_prev !== C1_expected_prev )
+		&& ((C1_expected_prev !== last_C1_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C1_expected_prev);
+		$display ("     Real value = %b", C1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_C1_exp = C1_expected_prev;
+	end
+	if (
+		( C2_expected_prev !== 1'bx ) && ( C2_prev !== C2_expected_prev )
+		&& ((C2_expected_prev !== last_C2_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C2_expected_prev);
+		$display ("     Real value = %b", C2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_C2_exp = C2_expected_prev;
+	end
+	if (
+		( C3_expected_prev !== 1'bx ) && ( C3_prev !== C3_expected_prev )
+		&& ((C3_expected_prev !== last_C3_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C3_expected_prev);
+		$display ("     Real value = %b", C3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_C3_exp = C3_expected_prev;
+	end
+	if (
+		( C4_expected_prev !== 1'bx ) && ( C4_prev !== C4_expected_prev )
+		&& ((C4_expected_prev !== last_C4_exp) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C4 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C4_expected_prev);
+		$display ("     Real value = %b", C4_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_C4_exp = C4_expected_prev;
+	end
+	if (
+		( C5_expected_prev !== 1'bx ) && ( C5_prev !== C5_expected_prev )
+		&& ((C5_expected_prev !== last_C5_exp) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C5 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C5_expected_prev);
+		$display ("     Real value = %b", C5_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_C5_exp = C5_expected_prev;
+	end
+	if (
+		( C6_expected_prev !== 1'bx ) && ( C6_prev !== C6_expected_prev )
+		&& ((C6_expected_prev !== last_C6_exp) ||
+			on_first_change[7])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C6 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C6_expected_prev);
+		$display ("     Real value = %b", C6_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[7] = 1'b0;
+		last_C6_exp = C6_expected_prev;
+	end
+	if (
+		( C7_expected_prev !== 1'bx ) && ( C7_prev !== C7_expected_prev )
+		&& ((C7_expected_prev !== last_C7_exp) ||
+			on_first_change[8])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C7 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C7_expected_prev);
+		$display ("     Real value = %b", C7_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[8] = 1'b0;
+		last_C7_exp = C7_expected_prev;
+	end
+	if (
+		( C8_expected_prev !== 1'bx ) && ( C8_prev !== C8_expected_prev )
+		&& ((C8_expected_prev !== last_C8_exp) ||
+			on_first_change[9])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C8 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C8_expected_prev);
+		$display ("     Real value = %b", C8_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[9] = 1'b0;
+		last_C8_exp = C8_expected_prev;
+	end
+	if (
+		( C9_expected_prev !== 1'bx ) && ( C9_prev !== C9_expected_prev )
+		&& ((C9_expected_prev !== last_C9_exp) ||
+			on_first_change[10])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C9 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C9_expected_prev);
+		$display ("     Real value = %b", C9_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[10] = 1'b0;
+		last_C9_exp = C9_expected_prev;
+	end
+	if (
+		( C10_expected_prev !== 1'bx ) && ( C10_prev !== C10_expected_prev )
+		&& ((C10_expected_prev !== last_C10_exp) ||
+			on_first_change[11])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C10 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C10_expected_prev);
+		$display ("     Real value = %b", C10_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[11] = 1'b0;
+		last_C10_exp = C10_expected_prev;
+	end
+	if (
+		( C11_expected_prev !== 1'bx ) && ( C11_prev !== C11_expected_prev )
+		&& ((C11_expected_prev !== last_C11_exp) ||
+			on_first_change[12])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C11 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C11_expected_prev);
+		$display ("     Real value = %b", C11_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[12] = 1'b0;
+		last_C11_exp = C11_expected_prev;
+	end
+	if (
+		( C42_expected_prev !== 1'bx ) && ( C42_prev !== C42_expected_prev )
+		&& ((C42_expected_prev !== last_C42_exp) ||
+			on_first_change[13])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C42 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C42_expected_prev);
+		$display ("     Real value = %b", C42_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[13] = 1'b0;
+		last_C42_exp = C42_expected_prev;
+	end
+	if (
+		( IR0_expected_prev !== 1'bx ) && ( IR0_prev !== IR0_expected_prev )
+		&& ((IR0_expected_prev !== last_IR0_exp) ||
+			on_first_change[14])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port IR0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", IR0_expected_prev);
+		$display ("     Real value = %b", IR0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[14] = 1'b0;
+		last_IR0_exp = IR0_expected_prev;
+	end
+	if (
+		( IR1_expected_prev !== 1'bx ) && ( IR1_prev !== IR1_expected_prev )
+		&& ((IR1_expected_prev !== last_IR1_exp) ||
+			on_first_change[15])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port IR1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", IR1_expected_prev);
+		$display ("     Real value = %b", IR1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[15] = 1'b0;
+		last_IR1_exp = IR1_expected_prev;
+	end
+	if (
+		( IR2_expected_prev !== 1'bx ) && ( IR2_prev !== IR2_expected_prev )
+		&& ((IR2_expected_prev !== last_IR2_exp) ||
+			on_first_change[16])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port IR2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", IR2_expected_prev);
+		$display ("     Real value = %b", IR2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[16] = 1'b0;
+		last_IR2_exp = IR2_expected_prev;
+	end
+	if (
+		( IR3_expected_prev !== 1'bx ) && ( IR3_prev !== IR3_expected_prev )
+		&& ((IR3_expected_prev !== last_IR3_exp) ||
+			on_first_change[17])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port IR3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", IR3_expected_prev);
+		$display ("     Real value = %b", IR3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[17] = 1'b0;
+		last_IR3_exp = IR3_expected_prev;
+	end
+	if (
+		( MAR0_expected_prev !== 1'bx ) && ( MAR0_prev !== MAR0_expected_prev )
+		&& ((MAR0_expected_prev !== last_MAR0_exp) ||
+			on_first_change[18])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MAR0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MAR0_expected_prev);
+		$display ("     Real value = %b", MAR0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[18] = 1'b0;
+		last_MAR0_exp = MAR0_expected_prev;
+	end
+	if (
+		( MAR1_expected_prev !== 1'bx ) && ( MAR1_prev !== MAR1_expected_prev )
+		&& ((MAR1_expected_prev !== last_MAR1_exp) ||
+			on_first_change[19])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MAR1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MAR1_expected_prev);
+		$display ("     Real value = %b", MAR1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[19] = 1'b0;
+		last_MAR1_exp = MAR1_expected_prev;
+	end
+	if (
+		( MAR2_expected_prev !== 1'bx ) && ( MAR2_prev !== MAR2_expected_prev )
+		&& ((MAR2_expected_prev !== last_MAR2_exp) ||
+			on_first_change[20])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MAR2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MAR2_expected_prev);
+		$display ("     Real value = %b", MAR2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[20] = 1'b0;
+		last_MAR2_exp = MAR2_expected_prev;
+	end
+	if (
+		( MAR3_expected_prev !== 1'bx ) && ( MAR3_prev !== MAR3_expected_prev )
+		&& ((MAR3_expected_prev !== last_MAR3_exp) ||
+			on_first_change[21])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MAR3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MAR3_expected_prev);
+		$display ("     Real value = %b", MAR3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[21] = 1'b0;
+		last_MAR3_exp = MAR3_expected_prev;
+	end
+	if (
+		( MDIn0_expected_prev !== 1'bx ) && ( MDIn0_prev !== MDIn0_expected_prev )
+		&& ((MDIn0_expected_prev !== last_MDIn0_exp) ||
+			on_first_change[29])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MDIn0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MDIn0_expected_prev);
+		$display ("     Real value = %b", MDIn0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[29] = 1'b0;
+		last_MDIn0_exp = MDIn0_expected_prev;
+	end
+	if (
+		( MDIn1_expected_prev !== 1'bx ) && ( MDIn1_prev !== MDIn1_expected_prev )
+		&& ((MDIn1_expected_prev !== last_MDIn1_exp) ||
+			on_first_change[30])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MDIn1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MDIn1_expected_prev);
+		$display ("     Real value = %b", MDIn1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[30] = 1'b0;
+		last_MDIn1_exp = MDIn1_expected_prev;
+	end
+	if (
+		( MDIn2_expected_prev !== 1'bx ) && ( MDIn2_prev !== MDIn2_expected_prev )
+		&& ((MDIn2_expected_prev !== last_MDIn2_exp) ||
+			on_first_change[31])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MDIn2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MDIn2_expected_prev);
+		$display ("     Real value = %b", MDIn2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[31] = 1'b0;
+		last_MDIn2_exp = MDIn2_expected_prev;
+	end
+	if (
+		( MDIn3_expected_prev !== 1'bx ) && ( MDIn3_prev !== MDIn3_expected_prev )
+		&& ((MDIn3_expected_prev !== last_MDIn3_exp) ||
+			on_first_change[32])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MDIn3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MDIn3_expected_prev);
+		$display ("     Real value = %b", MDIn3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[32] = 1'b0;
+		last_MDIn3_exp = MDIn3_expected_prev;
+	end
+	if (
+		( Mout0_expected_prev !== 1'bx ) && ( Mout0_prev !== Mout0_expected_prev )
+		&& ((Mout0_expected_prev !== last_Mout0_exp) ||
+			on_first_change[47])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Mout0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Mout0_expected_prev);
+		$display ("     Real value = %b", Mout0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[47] = 1'b0;
+		last_Mout0_exp = Mout0_expected_prev;
+	end
+	if (
+		( Mout1_expected_prev !== 1'bx ) && ( Mout1_prev !== Mout1_expected_prev )
+		&& ((Mout1_expected_prev !== last_Mout1_exp) ||
+			on_first_change[48])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Mout1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Mout1_expected_prev);
+		$display ("     Real value = %b", Mout1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[48] = 1'b0;
+		last_Mout1_exp = Mout1_expected_prev;
+	end
+	if (
+		( Mout2_expected_prev !== 1'bx ) && ( Mout2_prev !== Mout2_expected_prev )
+		&& ((Mout2_expected_prev !== last_Mout2_exp) ||
+			on_first_change[49])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Mout2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Mout2_expected_prev);
+		$display ("     Real value = %b", Mout2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[49] = 1'b0;
+		last_Mout2_exp = Mout2_expected_prev;
+	end
+	if (
+		( Mout3_expected_prev !== 1'bx ) && ( Mout3_prev !== Mout3_expected_prev )
+		&& ((Mout3_expected_prev !== last_Mout3_exp) ||
+			on_first_change[50])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Mout3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Mout3_expected_prev);
+		$display ("     Real value = %b", Mout3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[50] = 1'b0;
+		last_Mout3_exp = Mout3_expected_prev;
+	end
+	if (
+		( Operand0_expected_prev !== 1'bx ) && ( Operand0_prev !== Operand0_expected_prev )
+		&& ((Operand0_expected_prev !== last_Operand0_exp) ||
+			on_first_change[51])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Operand0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Operand0_expected_prev);
+		$display ("     Real value = %b", Operand0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[51] = 1'b0;
+		last_Operand0_exp = Operand0_expected_prev;
+	end
+	if (
+		( Operand1_expected_prev !== 1'bx ) && ( Operand1_prev !== Operand1_expected_prev )
+		&& ((Operand1_expected_prev !== last_Operand1_exp) ||
+			on_first_change[52])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Operand1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Operand1_expected_prev);
+		$display ("     Real value = %b", Operand1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[52] = 1'b0;
+		last_Operand1_exp = Operand1_expected_prev;
+	end
+	if (
+		( Operand2_expected_prev !== 1'bx ) && ( Operand2_prev !== Operand2_expected_prev )
+		&& ((Operand2_expected_prev !== last_Operand2_exp) ||
+			on_first_change[53])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Operand2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Operand2_expected_prev);
+		$display ("     Real value = %b", Operand2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[53] = 1'b0;
+		last_Operand2_exp = Operand2_expected_prev;
+	end
+	if (
+		( Operand3_expected_prev !== 1'bx ) && ( Operand3_prev !== Operand3_expected_prev )
+		&& ((Operand3_expected_prev !== last_Operand3_exp) ||
+			on_first_change[54])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Operand3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Operand3_expected_prev);
+		$display ("     Real value = %b", Operand3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[54] = 1'b0;
+		last_Operand3_exp = Operand3_expected_prev;
+	end
+	if (
+		( PC0_expected_prev !== 1'bx ) && ( PC0_prev !== PC0_expected_prev )
+		&& ((PC0_expected_prev !== last_PC0_exp) ||
+			on_first_change[55])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port PC0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", PC0_expected_prev);
+		$display ("     Real value = %b", PC0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[55] = 1'b0;
+		last_PC0_exp = PC0_expected_prev;
+	end
+	if (
+		( PC1_expected_prev !== 1'bx ) && ( PC1_prev !== PC1_expected_prev )
+		&& ((PC1_expected_prev !== last_PC1_exp) ||
+			on_first_change[56])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port PC1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", PC1_expected_prev);
+		$display ("     Real value = %b", PC1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[56] = 1'b0;
+		last_PC1_exp = PC1_expected_prev;
+	end
+	if (
+		( PC2_expected_prev !== 1'bx ) && ( PC2_prev !== PC2_expected_prev )
+		&& ((PC2_expected_prev !== last_PC2_exp) ||
+			on_first_change[57])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port PC2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", PC2_expected_prev);
+		$display ("     Real value = %b", PC2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[57] = 1'b0;
+		last_PC2_exp = PC2_expected_prev;
+	end
+	if (
+		( PC3_expected_prev !== 1'bx ) && ( PC3_prev !== PC3_expected_prev )
+		&& ((PC3_expected_prev !== last_PC3_exp) ||
+			on_first_change[58])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port PC3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", PC3_expected_prev);
+		$display ("     Real value = %b", PC3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[58] = 1'b0;
+		last_PC3_exp = PC3_expected_prev;
+	end
+	if (
+		( readWrite_expected_prev !== 1'bx ) && ( readWrite_prev !== readWrite_expected_prev )
+		&& ((readWrite_expected_prev !== last_readWrite_exp) ||
+			on_first_change[63])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port readWrite :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", readWrite_expected_prev);
+		$display ("     Real value = %b", readWrite_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[63] = 1'b0;
+		last_readWrite_exp = readWrite_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#4400000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module partA_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg CLKcontroller;
+reg CLRcontroller;
+// wires                                               
+wire C0;
+wire C1;
+wire C2;
+wire C3;
+wire C4;
+wire C5;
+wire C6;
+wire C7;
+wire C8;
+wire C9;
+wire C10;
+wire C11;
+wire C42;
+wire IR0;
+wire IR1;
+wire IR2;
+wire IR3;
+wire MAR0;
+wire MAR1;
+wire MAR2;
+wire MAR3;
+wire MARHex0;
+wire MARHex1;
+wire MARHex2;
+wire MARHex3;
+wire MARHex4;
+wire MARHex5;
+wire MARHex6;
+wire MDIn0;
+wire MDIn1;
+wire MDIn2;
+wire MDIn3;
+wire MDinHex0;
+wire MDinHex1;
+wire MDinHex2;
+wire MDinHex3;
+wire MDinHex4;
+wire MDinHex5;
+wire MDinHex6;
+wire MDoutHex0;
+wire MDoutHex1;
+wire MDoutHex2;
+wire MDoutHex3;
+wire MDoutHex4;
+wire MDoutHex5;
+wire MDoutHex6;
+wire Mout0;
+wire Mout1;
+wire Mout2;
+wire Mout3;
+wire Operand0;
+wire Operand1;
+wire Operand2;
+wire Operand3;
+wire PC0;
+wire PC1;
+wire PC2;
+wire PC3;
+wire R0;
+wire R1;
+wire R2;
+wire R3;
+wire readWrite;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+partA i1 (
+// port map - connection between master ports and signals/registers   
+	.C0(C0),
+	.C1(C1),
+	.C2(C2),
+	.C3(C3),
+	.C4(C4),
+	.C5(C5),
+	.C6(C6),
+	.C7(C7),
+	.C8(C8),
+	.C9(C9),
+	.C10(C10),
+	.C11(C11),
+	.C42(C42),
+	.CLKcontroller(CLKcontroller),
+	.CLRcontroller(CLRcontroller),
+	.IR0(IR0),
+	.IR1(IR1),
+	.IR2(IR2),
+	.IR3(IR3),
+	.MAR0(MAR0),
+	.MAR1(MAR1),
+	.MAR2(MAR2),
+	.MAR3(MAR3),
+	.MARHex0(MARHex0),
+	.MARHex1(MARHex1),
+	.MARHex2(MARHex2),
+	.MARHex3(MARHex3),
+	.MARHex4(MARHex4),
+	.MARHex5(MARHex5),
+	.MARHex6(MARHex6),
+	.MDIn0(MDIn0),
+	.MDIn1(MDIn1),
+	.MDIn2(MDIn2),
+	.MDIn3(MDIn3),
+	.MDinHex0(MDinHex0),
+	.MDinHex1(MDinHex1),
+	.MDinHex2(MDinHex2),
+	.MDinHex3(MDinHex3),
+	.MDinHex4(MDinHex4),
+	.MDinHex5(MDinHex5),
+	.MDinHex6(MDinHex6),
+	.MDoutHex0(MDoutHex0),
+	.MDoutHex1(MDoutHex1),
+	.MDoutHex2(MDoutHex2),
+	.MDoutHex3(MDoutHex3),
+	.MDoutHex4(MDoutHex4),
+	.MDoutHex5(MDoutHex5),
+	.MDoutHex6(MDoutHex6),
+	.Mout0(Mout0),
+	.Mout1(Mout1),
+	.Mout2(Mout2),
+	.Mout3(Mout3),
+	.Operand0(Operand0),
+	.Operand1(Operand1),
+	.Operand2(Operand2),
+	.Operand3(Operand3),
+	.PC0(PC0),
+	.PC1(PC1),
+	.PC2(PC2),
+	.PC3(PC3),
+	.R0(R0),
+	.R1(R1),
+	.R2(R2),
+	.R3(R3),
+	.readWrite(readWrite)
+);
+
+// CLKcontroller
+initial
+begin
+	CLKcontroller = 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #39000 1'b0;
+	CLKcontroller = #41000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+	CLKcontroller = #40000 1'b0;
+	CLKcontroller = #40000 1'b1;
+end 
+
+partA_vlg_sample_tst tb_sample (
+	.CLKcontroller(CLKcontroller),
+	.CLRcontroller(CLRcontroller),
+	.sampler_tx(sampler)
+);
+
+partA_vlg_check_tst tb_out(
+	.C0(C0),
+	.C1(C1),
+	.C2(C2),
+	.C3(C3),
+	.C4(C4),
+	.C5(C5),
+	.C6(C6),
+	.C7(C7),
+	.C8(C8),
+	.C9(C9),
+	.C10(C10),
+	.C11(C11),
+	.C42(C42),
+	.IR0(IR0),
+	.IR1(IR1),
+	.IR2(IR2),
+	.IR3(IR3),
+	.MAR0(MAR0),
+	.MAR1(MAR1),
+	.MAR2(MAR2),
+	.MAR3(MAR3),
+	.MARHex0(MARHex0),
+	.MARHex1(MARHex1),
+	.MARHex2(MARHex2),
+	.MARHex3(MARHex3),
+	.MARHex4(MARHex4),
+	.MARHex5(MARHex5),
+	.MARHex6(MARHex6),
+	.MDIn0(MDIn0),
+	.MDIn1(MDIn1),
+	.MDIn2(MDIn2),
+	.MDIn3(MDIn3),
+	.MDinHex0(MDinHex0),
+	.MDinHex1(MDinHex1),
+	.MDinHex2(MDinHex2),
+	.MDinHex3(MDinHex3),
+	.MDinHex4(MDinHex4),
+	.MDinHex5(MDinHex5),
+	.MDinHex6(MDinHex6),
+	.MDoutHex0(MDoutHex0),
+	.MDoutHex1(MDoutHex1),
+	.MDoutHex2(MDoutHex2),
+	.MDoutHex3(MDoutHex3),
+	.MDoutHex4(MDoutHex4),
+	.MDoutHex5(MDoutHex5),
+	.MDoutHex6(MDoutHex6),
+	.Mout0(Mout0),
+	.Mout1(Mout1),
+	.Mout2(Mout2),
+	.Mout3(Mout3),
+	.Operand0(Operand0),
+	.Operand1(Operand1),
+	.Operand2(Operand2),
+	.Operand3(Operand3),
+	.PC0(PC0),
+	.PC1(PC1),
+	.PC2(PC2),
+	.PC3(PC3),
+	.R0(R0),
+	.R1(R1),
+	.R2(R2),
+	.R3(R3),
+	.readWrite(readWrite),
+	.sampler_rx(sampler)
+);
+endmodule
+

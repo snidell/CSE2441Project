@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ScottN\Google Drive\SchoolWork\UTA\2014Fall\CSE 2441\Projects\TRISCProject-PartA\simulation\qsim
+vpartA
+Z1 I5T4n7SBn7=I7M5iH@h;ZY0
+Z2 V[zFG@CkWDS=_]N7VfC6Pz3
+Z3 dC:\Users\ScottN\Google Drive\SchoolWork\UTA\2014Fall\CSE 2441\Projects\TRISCProject-PartC\simulation\qsim
+Z4 w1417576337
+Z5 8partA.vo
+Z6 FpartA.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|partA.vo|
+Z9 o-work work -O0
+Z10 npart@a
+!i10b 1
+Z11 !s100 D]d:e7_=ZDBnaZShNXlE61
+!s85 0
+Z12 !s108 1417576339.200000
+Z13 !s107 partA.vo|
+!s101 -O0
+vpartA_vlg_check_tst
+!i10b 1
+Z14 !s100 FIRJJU2TJiV_[SX23nXfg1
+Z15 I?B6T1c5zak@eN8]_S;;XJ3
+Z16 V_K=_bFO9Li>j;ekCfRHFN2
+R3
+Z17 w1417576336
+Z18 8partA.vt
+Z19 FpartA.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z20 !s108 1417576339.606000
+Z21 !s107 partA.vt|
+Z22 !s90 -work|work|partA.vt|
+!s101 -O0
+R9
+Z23 npart@a_vlg_check_tst
+vpartA_vlg_sample_tst
+!i10b 1
+Z24 !s100 zQ[o87dF`WMX`meC[e82I1
+Z25 ISB1[61j01`ej_dYjf`B;11
+Z26 Va`M=;7I5I`nleRoafKeG]0
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 npart@a_vlg_sample_tst
+vpartA_vlg_vec_tst
+!i10b 1
+Z28 !s100 ngZff?2[L:NKWFb[K8P5R2
+Z29 IzzUS8lj66e28W1zQWj7oe3
+Z30 V3gi:h7eIYdVbA91N^o]b^1
+R3
+R17
+R18
+R19
+Z31 L0 1332
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z32 npart@a_vlg_vec_tst

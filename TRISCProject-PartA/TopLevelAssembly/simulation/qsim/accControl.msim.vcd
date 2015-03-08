@@ -1,0 +1,359 @@
+$comment
+	File created using the following command:
+		vcd file accControl.msim.vcd -direction
+$end
+$date
+	Sun Nov 09 00:13:28 2014
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module accControl_vlg_vec_tst $end
+$var reg 1 ! A $end
+$var reg 1 " B $end
+$var reg 1 # C $end
+$var reg 1 $ CLK $end
+$var reg 1 % CLR $end
+$var reg 1 & D $end
+$var wire 1 ' C0 $end
+$var wire 1 ( C2 $end
+$var wire 1 ) C3 $end
+$var wire 1 * C4 $end
+$var wire 1 + C7 $end
+$var wire 1 , C8 $end
+$var wire 1 - C9 $end
+$var wire 1 . C42 $end
+$var wire 1 / sampler $end
+$scope module i1 $end
+$var wire 1 0 gnd $end
+$var wire 1 1 vcc $end
+$var wire 1 2 unknown $end
+$var tri1 1 3 devclrn $end
+$var tri1 1 4 devpor $end
+$var tri1 1 5 devoe $end
+$var wire 1 6 D~combout $end
+$var wire 1 7 CLK~combout $end
+$var wire 1 8 CLK~clkctrl_outclk $end
+$var wire 1 9 inst1|state.000~feeder_combout $end
+$var wire 1 : CLR~combout $end
+$var wire 1 ; CLR~clkctrl_outclk $end
+$var wire 1 < inst1|state.000~regout $end
+$var wire 1 = A~combout $end
+$var wire 1 > C~combout $end
+$var wire 1 ? inst1|state.111~0_combout $end
+$var wire 1 @ inst1|state.111~regout $end
+$var wire 1 A B~combout $end
+$var wire 1 B inst1|always0~0_combout $end
+$var wire 1 C inst1|Selector5~0_combout $end
+$var wire 1 D inst1|state.101~regout $end
+$var wire 1 E inst1|Selector6~0_combout $end
+$var wire 1 F inst1|state.110~regout $end
+$var wire 1 G inst1|state~24_combout $end
+$var wire 1 H inst1|state.001~regout $end
+$var wire 1 I inst1|state~25_combout $end
+$var wire 1 J inst1|state.010~regout $end
+$var wire 1 K inst1|state~26_combout $end
+$var wire 1 L inst1|state.011~regout $end
+$var wire 1 M inst1|state~23_combout $end
+$var wire 1 N inst1|state.100~regout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+1%
+0&
+1'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+x/
+00
+11
+x2
+13
+14
+15
+06
+07
+08
+19
+1:
+1;
+0<
+0=
+0>
+1?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+$end
+#40000
+1"
+1#
+0%
+1A
+1>
+0:
+0;
+0/
+1B
+0?
+1G
+#60000
+1$
+17
+18
+1/
+1H
+1<
+1I
+0G
+1)
+0'
+#100000
+0$
+07
+08
+0/
+#140000
+1$
+17
+18
+1/
+1J
+0H
+1K
+0I
+1*
+0)
+#180000
+0$
+07
+08
+0/
+#220000
+1$
+17
+18
+1/
+1L
+0J
+1M
+0K
+1.
+0*
+#260000
+0$
+07
+08
+0/
+#300000
+1$
+17
+18
+1/
+1N
+0L
+1E
+0M
+1+
+1(
+0.
+#340000
+0$
+07
+08
+0/
+#380000
+1$
+17
+18
+1/
+0N
+1F
+0E
+1G
+0+
+0(
+1-
+#420000
+0$
+07
+08
+0/
+#460000
+1$
+17
+18
+1/
+1H
+0F
+1I
+0G
+1)
+0-
+#500000
+1&
+0"
+0#
+1%
+0$
+16
+0A
+0>
+1:
+07
+08
+1;
+0/
+0I
+0B
+1?
+0H
+0<
+0)
+1'
+#520000
+1"
+1#
+0%
+1A
+1>
+0:
+0;
+1/
+1B
+0?
+1G
+#540000
+1$
+17
+18
+0/
+1H
+1<
+1I
+0G
+1)
+0'
+#580000
+0$
+07
+08
+1/
+#620000
+1$
+17
+18
+0/
+1J
+0H
+1K
+0I
+1*
+0)
+#660000
+0$
+07
+08
+1/
+#700000
+1$
+17
+18
+0/
+1L
+0J
+1M
+0K
+1.
+0*
+#740000
+0$
+07
+08
+1/
+#780000
+1$
+17
+18
+0/
+1N
+0L
+1C
+0M
+1+
+1(
+0.
+#820000
+0$
+07
+08
+1/
+#860000
+1$
+17
+18
+0/
+0N
+1D
+0C
+1G
+0+
+0(
+1,
+#900000
+0$
+07
+08
+1/
+#940000
+1$
+17
+18
+0/
+1H
+0D
+1I
+0G
+1)
+0,
+#980000
+0&
+0"
+0#
+0$
+06
+0A
+0>
+07
+08
+1/
+0I
+0B
+1?
+#1000000

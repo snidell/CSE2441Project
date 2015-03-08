@@ -1,0 +1,505 @@
+$comment
+	File created using the following command:
+		vcd file pwm.msim.vcd -direction
+$end
+$date
+	Sat Nov 22 01:56:38 2014
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module pwm_vlg_vec_tst $end
+$var reg 1 ! address0 $end
+$var reg 1 " address1 $end
+$var reg 1 # address2 $end
+$var reg 1 $ address3 $end
+$var reg 1 % C4 $end
+$var reg 1 & C42 $end
+$var reg 1 ' CLK $end
+$var reg 8 ( data [7:0] $end
+$var reg 1 ) WriteEn $end
+$var wire 1 * Q0 $end
+$var wire 1 + Q1 $end
+$var wire 1 , Q2 $end
+$var wire 1 - Q3 $end
+$var wire 1 . Q4 $end
+$var wire 1 / Q5 $end
+$var wire 1 0 Q6 $end
+$var wire 1 1 Q7 $end
+$var wire 1 2 WRENSig $end
+$var wire 1 3 sampler $end
+$scope module i1 $end
+$var wire 1 4 gnd $end
+$var wire 1 5 vcc $end
+$var wire 1 6 unknown $end
+$var tri1 1 7 devclrn $end
+$var tri1 1 8 devpor $end
+$var tri1 1 9 devoe $end
+$var wire 1 : WriteEn~combout $end
+$var wire 1 ; C42~combout $end
+$var wire 1 < C4~combout $end
+$var wire 1 = CLK~combout $end
+$var wire 1 > inst3~combout $end
+$var wire 1 ? inst3~clkctrl_outclk $end
+$var wire 1 @ address0~combout $end
+$var wire 1 A address1~combout $end
+$var wire 1 B address2~combout $end
+$var wire 1 C address3~combout $end
+$var wire 1 D data~combout [7] $end
+$var wire 1 E data~combout [6] $end
+$var wire 1 F data~combout [5] $end
+$var wire 1 G data~combout [4] $end
+$var wire 1 H data~combout [3] $end
+$var wire 1 I data~combout [2] $end
+$var wire 1 J data~combout [1] $end
+$var wire 1 K data~combout [0] $end
+$var wire 1 L inst|altsyncram_component|auto_generated|q_a [7] $end
+$var wire 1 M inst|altsyncram_component|auto_generated|q_a [6] $end
+$var wire 1 N inst|altsyncram_component|auto_generated|q_a [5] $end
+$var wire 1 O inst|altsyncram_component|auto_generated|q_a [4] $end
+$var wire 1 P inst|altsyncram_component|auto_generated|q_a [3] $end
+$var wire 1 Q inst|altsyncram_component|auto_generated|q_a [2] $end
+$var wire 1 R inst|altsyncram_component|auto_generated|q_a [1] $end
+$var wire 1 S inst|altsyncram_component|auto_generated|q_a [0] $end
+$var wire 1 T inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [7] $end
+$var wire 1 U inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [6] $end
+$var wire 1 V inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [5] $end
+$var wire 1 W inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [4] $end
+$var wire 1 X inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [3] $end
+$var wire 1 Y inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [2] $end
+$var wire 1 Z inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [1] $end
+$var wire 1 [ inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+1&
+1'
+b0 (
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+12
+x3
+04
+15
+x6
+17
+18
+19
+0:
+1;
+0<
+1=
+1>
+1?
+0@
+0A
+0B
+0C
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+$end
+#20000
+0&
+0'
+0;
+0=
+03
+0>
+0?
+02
+#40000
+1!
+1&
+1'
+1@
+1;
+1=
+13
+1>
+1?
+12
+#60000
+0&
+0'
+0;
+0=
+03
+0>
+0?
+02
+#80000
+1"
+0!
+1&
+1'
+1A
+0@
+1;
+1=
+13
+1>
+1?
+12
+1V
+1U
+1N
+1M
+1/
+10
+#100000
+0&
+0'
+0;
+0=
+03
+0>
+0?
+02
+#120000
+1!
+1&
+1'
+1@
+1;
+1=
+13
+1>
+1?
+12
+1W
+1O
+1.
+#140000
+0&
+0'
+0;
+0=
+03
+0>
+0?
+02
+#160000
+1#
+0"
+0!
+1&
+1'
+1B
+0A
+0@
+1;
+1=
+13
+1>
+1?
+12
+0W
+0O
+0.
+#180000
+0&
+0'
+0;
+0=
+03
+0>
+0?
+02
+#200000
+1!
+1&
+1'
+1@
+1;
+1=
+13
+1>
+1?
+12
+#220000
+0&
+0'
+0;
+0=
+03
+0>
+0?
+02
+#240000
+1"
+0!
+1&
+1'
+1A
+0@
+1;
+1=
+13
+1>
+1?
+12
+1W
+1O
+1.
+#260000
+0&
+0'
+0;
+0=
+03
+0>
+0?
+02
+#280000
+1!
+1&
+1'
+1@
+1;
+1=
+13
+1>
+1?
+12
+0W
+0O
+0.
+#300000
+0&
+0'
+0;
+0=
+03
+0>
+0?
+02
+#320000
+1$
+0#
+0"
+0!
+1&
+1'
+1C
+0B
+0A
+0@
+1;
+1=
+13
+1>
+1?
+12
+#340000
+0&
+0'
+0;
+0=
+03
+0>
+0?
+02
+#360000
+1!
+1&
+1'
+1@
+1;
+1=
+13
+1>
+1?
+12
+#380000
+0&
+0'
+0;
+0=
+03
+0>
+0?
+02
+#400000
+1"
+0!
+1&
+1'
+1A
+0@
+1;
+1=
+13
+1>
+1?
+12
+1W
+1O
+1.
+#420000
+0&
+0'
+0;
+0=
+03
+0>
+0?
+02
+#440000
+1!
+1&
+1'
+1@
+1;
+1=
+13
+1>
+1?
+12
+#460000
+0&
+0'
+0;
+0=
+03
+0>
+0?
+02
+#480000
+1#
+0"
+0!
+1&
+1'
+1B
+0A
+0@
+1;
+1=
+13
+1>
+1?
+12
+0W
+0O
+0.
+#500000
+0&
+0'
+0;
+0=
+03
+0>
+0?
+02
+#520000
+1!
+1&
+1'
+1@
+1;
+1=
+13
+1>
+1?
+12
+#540000
+0&
+0'
+0;
+0=
+03
+0>
+0?
+02
+#560000
+1"
+0!
+1&
+1'
+1A
+0@
+1;
+1=
+13
+1>
+1?
+12
+#580000
+0&
+0'
+0;
+0=
+03
+0>
+0?
+02
+#600000
+1!
+1&
+1'
+1@
+1;
+1=
+13
+1>
+1?
+12
+#620000
+0&
+0'
+0;
+0=
+03
+0>
+0?
+02
+#640000
+0$
+0#
+0"
+0!
+0C
+0B
+0A
+0@
+13
+#1200000

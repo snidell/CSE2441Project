@@ -1,0 +1,76 @@
+|accControl
+C0 <= accController:inst1.C0
+CLK => accController:inst1.clk
+CLR => inst2.IN0
+A => opCodeDecoder:inst.A
+A => Aout.DATAIN
+B => opCodeDecoder:inst.B
+B => Bout.DATAIN
+C => opCodeDecoder:inst.C
+C => Cout.DATAIN
+D => opCodeDecoder:inst.D
+D => Dout.DATAIN
+C2 <= accController:inst1.C2
+C3 <= accController:inst1.C3
+C4 <= accController:inst1.C4
+C42 <= accController:inst1.C42
+C7 <= accController:inst1.C7
+C8 <= accController:inst1.C8
+C9 <= accController:inst1.C9
+Aout <= A.DB_MAX_OUTPUT_PORT_TYPE
+Bout <= B.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+Dout <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accControl|accController:inst1
+clk => state~9.DATAIN
+CLR => state~11.DATAIN
+INCA => always0.IN0
+INCA => state.OUTPUTSELECT
+INCA => state.OUTPUTSELECT
+INCA => state.OUTPUTSELECT
+INCA => state.OUTPUTSELECT
+INCA => state.OUTPUTSELECT
+INCA => state.OUTPUTSELECT
+INCA => state.OUTPUTSELECT
+INCA => state.OUTPUTSELECT
+INCA => always0.IN0
+CLRA => always0.IN1
+CLRA => state.OUTPUTSELECT
+CLRA => state.OUTPUTSELECT
+CLRA => state.OUTPUTSELECT
+CLRA => state.OUTPUTSELECT
+CLRA => state.OUTPUTSELECT
+CLRA => state.OUTPUTSELECT
+CLRA => state.OUTPUTSELECT
+CLRA => state.OUTPUTSELECT
+CLRA => always0.IN1
+C0 <= C0.DB_MAX_OUTPUT_PORT_TYPE
+C2 <= C2.DB_MAX_OUTPUT_PORT_TYPE
+C3 <= C3.DB_MAX_OUTPUT_PORT_TYPE
+C4 <= C4.DB_MAX_OUTPUT_PORT_TYPE
+C42 <= C42.DB_MAX_OUTPUT_PORT_TYPE
+C7 <= C7.DB_MAX_OUTPUT_PORT_TYPE
+C8 <= C8.DB_MAX_OUTPUT_PORT_TYPE
+C9 <= C9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accControl|opCodeDecoder:inst
+A => Decoder0.IN0
+B => Decoder0.IN1
+C => Decoder0.IN2
+D => Decoder0.IN3
+LDA <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+STA <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+ADD <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+SUB <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+XOR <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+INC <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+CLR <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+JMP <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+JPZ <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+JPN <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HLT <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

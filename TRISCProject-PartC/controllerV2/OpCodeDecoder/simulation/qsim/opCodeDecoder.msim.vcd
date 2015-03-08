@@ -1,0 +1,276 @@
+$comment
+	File created using the following command:
+		vcd file opCodeDecoder.msim.vcd -direction
+$end
+$date
+	Fri Nov 07 11:06:31 2014
+$end
+$version
+	ModelSim Version 10.1e
+$end
+$timescale
+	1ps
+$end
+$scope module opCodeDecoder_vlg_vec_tst $end
+$var reg 1 ! A $end
+$var reg 1 " B $end
+$var reg 1 # C $end
+$var reg 1 $ D $end
+$var wire 1 % ADD $end
+$var wire 1 & CLR $end
+$var wire 1 ' HLT $end
+$var wire 1 ( INC $end
+$var wire 1 ) JMP $end
+$var wire 1 * JPN $end
+$var wire 1 + JPZ $end
+$var wire 1 , LDA $end
+$var wire 1 - STA $end
+$var wire 1 . SUB $end
+$var wire 1 / XOR $end
+$var wire 1 0 sampler $end
+$scope module i1 $end
+$var wire 1 1 gnd $end
+$var wire 1 2 vcc $end
+$var wire 1 3 unknown $end
+$var tri1 1 4 devclrn $end
+$var tri1 1 5 devpor $end
+$var tri1 1 6 devoe $end
+$var wire 1 7 LDA~output_o $end
+$var wire 1 8 STA~output_o $end
+$var wire 1 9 ADD~output_o $end
+$var wire 1 : SUB~output_o $end
+$var wire 1 ; XOR~output_o $end
+$var wire 1 < INC~output_o $end
+$var wire 1 = CLR~output_o $end
+$var wire 1 > JMP~output_o $end
+$var wire 1 ? JPZ~output_o $end
+$var wire 1 @ JPN~output_o $end
+$var wire 1 A HLT~output_o $end
+$var wire 1 B D~input_o $end
+$var wire 1 C B~input_o $end
+$var wire 1 D C~input_o $end
+$var wire 1 E A~input_o $end
+$var wire 1 F Decoder0~0_combout $end
+$var wire 1 G Decoder0~1_combout $end
+$var wire 1 H Decoder0~2_combout $end
+$var wire 1 I Decoder0~3_combout $end
+$var wire 1 J Decoder0~4_combout $end
+$var wire 1 K Decoder0~5_combout $end
+$var wire 1 L Decoder0~6_combout $end
+$var wire 1 M Decoder0~7_combout $end
+$var wire 1 N Decoder0~8_combout $end
+$var wire 1 O Decoder0~9_combout $end
+$var wire 1 P Decoder0~10_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+1,
+0-
+0.
+0/
+x0
+01
+12
+x3
+14
+15
+16
+17
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+1F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+$end
+#40000
+1$
+1B
+00
+1G
+0F
+18
+07
+1-
+0,
+#80000
+1#
+0$
+1D
+0B
+10
+1H
+0G
+19
+08
+1%
+0-
+#120000
+1$
+1B
+00
+1I
+0H
+1:
+09
+1.
+0%
+#160000
+1"
+0#
+0$
+1C
+0D
+0B
+10
+1J
+0I
+1;
+0:
+1/
+0.
+#200000
+1$
+1B
+00
+0J
+0;
+0/
+#240000
+1#
+0$
+1D
+0B
+10
+1K
+1<
+1(
+#280000
+1$
+1B
+00
+1L
+0K
+1=
+0<
+1&
+0(
+#320000
+1!
+0"
+0#
+0$
+1E
+0C
+0D
+0B
+10
+1M
+0L
+1>
+0=
+1)
+0&
+#360000
+1$
+1B
+00
+1N
+0M
+1?
+0>
+1+
+0)
+#400000
+1#
+0$
+1D
+0B
+10
+0N
+0?
+0+
+#440000
+1$
+1B
+00
+#480000
+1"
+0#
+0$
+1C
+0D
+0B
+10
+1O
+1@
+1*
+#520000
+1$
+1B
+00
+0O
+0@
+0*
+#560000
+1#
+0$
+1D
+0B
+10
+#600000
+1$
+1B
+00
+1P
+1A
+1'
+#640000
+0!
+0"
+0#
+0$
+0E
+0C
+0D
+0B
+10
+0P
+1F
+0A
+17
+0'
+1,
+#1000000

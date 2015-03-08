@@ -1,0 +1,19 @@
+|InstructionRegister
+IRout3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+Clear => inst4.ACLR
+Load => inst.CLK
+Load => inst2.CLK
+Load => inst3.CLK
+Load => inst4.CLK
+IR3 => inst.DATAIN
+IRout2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IR2 => inst2.DATAIN
+IRout1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+IR1 => inst3.DATAIN
+IRout0 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+IR0 => inst4.DATAIN
+
+

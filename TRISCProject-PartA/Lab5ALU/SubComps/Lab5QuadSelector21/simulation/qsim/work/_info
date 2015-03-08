@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ScottN\Google Drive\SchoolWork\UTA\Fall 2014\CSE 2441\Labs\Lab5\Lab5QuadSelector21\simulation\qsim
+vQuadSelector21
+Z1 IGoo@2i;_n4IRccl=:BQ7<1
+Z2 V]YB@@N:<IPaF<FU3F0L[33
+Z3 dC:\Users\ScottN\Google Drive\SchoolWork\UTA\Fall 2014\CSE 2441\Labs\Lab5\Lab5QuadSelector21\simulation\qsim
+Z4 w1411792538
+Z5 8QuadSelector21.vo
+Z6 FQuadSelector21.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@quad@selector21
+!i10b 1
+Z10 !s100 4<k?Z^Od:EL5SAIT0gOX=0
+!s85 0
+Z11 !s108 1411792539.829000
+Z12 !s107 QuadSelector21.vo|
+Z13 !s90 -work|work|QuadSelector21.vo|
+!s101 -O0
+vQuadSelector21_vlg_check_tst
+!i10b 1
+!s100 <WfhDRYaMSkHeURYMZb151
+I27AV^;2d]Xo66JH;=K?HS2
+V@[kX<7=aO51<M:W2PLZaE1
+R3
+Z14 w1411792537
+Z15 8QuadSelector21.vt
+Z16 FQuadSelector21.vt
+L0 73
+R7
+r1
+!s85 0
+31
+Z17 !s108 1411792539.959000
+Z18 !s107 QuadSelector21.vt|
+Z19 !s90 -work|work|QuadSelector21.vt|
+!s101 -O0
+R8
+n@quad@selector21_vlg_check_tst
+vQuadSelector21_vlg_sample_tst
+!i10b 1
+!s100 Li^W3U4:4=MUmCS1n2>fz3
+ImPVTMTNYgLkP80Q9j_Y4k1
+VI^Q?6`]VPQ:7JeVY:LV3R1
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@quad@selector21_vlg_sample_tst
+vQuadSelector21_vlg_vec_tst
+!i10b 1
+!s100 PbaXG5C5DOoj4gTT1e7VK0
+I_EF>o5g_@;zajW4[4JB[Q3
+VGPk;6BoTMPT]TohhVkJEY1
+R3
+R14
+R15
+R16
+L0 249
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@quad@selector21_vlg_vec_tst

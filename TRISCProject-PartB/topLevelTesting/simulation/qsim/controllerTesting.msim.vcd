@@ -1,0 +1,374 @@
+$comment
+	File created using the following command:
+		vcd file controllerTesting.msim.vcd -direction
+$end
+$date
+	Thu Nov 27 20:56:50 2014
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module controllerTesting_vlg_vec_tst $end
+$var reg 1 ! A $end
+$var reg 1 " B $end
+$var reg 1 # C $end
+$var reg 1 $ CLK $end
+$var reg 1 % CLR $end
+$var reg 1 & D $end
+$var wire 1 ' C0 $end
+$var wire 1 ( C1 $end
+$var wire 1 ) C2 $end
+$var wire 1 * C3 $end
+$var wire 1 + C4 $end
+$var wire 1 , C5 $end
+$var wire 1 - C6 $end
+$var wire 1 . C7 $end
+$var wire 1 / C8 $end
+$var wire 1 0 C9 $end
+$var wire 1 1 C10 $end
+$var wire 1 2 C11 $end
+$var wire 1 3 C42 $end
+$var wire 1 4 Jump $end
+$var wire 1 5 sampler $end
+$scope module i1 $end
+$var wire 1 6 gnd $end
+$var wire 1 7 vcc $end
+$var wire 1 8 unknown $end
+$var tri1 1 9 devclrn $end
+$var tri1 1 : devpor $end
+$var tri1 1 ; devoe $end
+$var wire 1 < inst2|Decoder0~2_combout $end
+$var wire 1 = inst|state~29_combout $end
+$var wire 1 > CLK~combout $end
+$var wire 1 ? CLK~clkctrl_outclk $end
+$var wire 1 @ inst|state.0000~feeder_combout $end
+$var wire 1 A CLR~combout $end
+$var wire 1 B CLR~clkctrl_outclk $end
+$var wire 1 C inst|state.0000~regout $end
+$var wire 1 D C~combout $end
+$var wire 1 E B~combout $end
+$var wire 1 F D~combout $end
+$var wire 1 G inst2|Decoder0~0_combout $end
+$var wire 1 H inst2|Decoder0~1_combout $end
+$var wire 1 I A~combout $end
+$var wire 1 J inst|state~24_combout $end
+$var wire 1 K inst|state.0111~regout $end
+$var wire 1 L inst|Selector1~2_combout $end
+$var wire 1 M inst|state~26_combout $end
+$var wire 1 N inst|state.1100~regout $end
+$var wire 1 O inst|state~27_combout $end
+$var wire 1 P inst|state.0101~regout $end
+$var wire 1 Q inst|state~28_combout $end
+$var wire 1 R inst|state.0110~regout $end
+$var wire 1 S inst|Selector1~0_combout $end
+$var wire 1 T inst|Selector1~1_combout $end
+$var wire 1 U inst|Selector1~3_combout $end
+$var wire 1 V inst|state.0001~regout $end
+$var wire 1 W inst|Selector2~0_combout $end
+$var wire 1 X inst|state.0010~regout $end
+$var wire 1 Y inst|state.0011~regout $end
+$var wire 1 Z inst|state.0100~regout $end
+$var wire 1 [ inst|state~25_combout $end
+$var wire 1 \ inst|state.1000~regout $end
+$var wire 1 ] inst|WideOr8~0_combout $end
+$var wire 1 ^ inst|state.1001~regout $end
+$var wire 1 _ inst|C42~0_combout $end
+$var wire 1 ` inst2|Decoder0~3_combout $end
+$var wire 1 a inst|state~30_combout $end
+$var wire 1 b inst|state.1101~regout $end
+$var wire 1 c inst|state.1110~regout $end
+$var wire 1 d inst|state.1010~regout $end
+$var wire 1 e inst|WideOr3~combout $end
+$var wire 1 f inst|state.1011~regout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+0#
+0$
+0%
+0&
+1'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+02
+03
+14
+x5
+06
+17
+x8
+19
+1:
+1;
+0<
+1=
+0>
+0?
+1@
+0A
+0B
+0C
+0D
+0E
+0F
+1G
+1H
+1I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+1S
+1T
+1U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+$end
+#20000
+1$
+1%
+1>
+1A
+1B
+1?
+05
+1V
+1C
+1W
+0S
+0'
+0T
+0U
+#60000
+0$
+0>
+0?
+15
+#100000
+1$
+1>
+1?
+05
+1X
+0V
+1]
+0W
+1+
+#140000
+0$
+0>
+0?
+15
+#180000
+1$
+1>
+1?
+05
+1Y
+0X
+1_
+0]
+13
+0+
+#220000
+0$
+0>
+0?
+15
+#260000
+1$
+1>
+1?
+05
+1Z
+0Y
+1J
+0_
+1.
+1)
+03
+#300000
+0$
+0>
+0?
+15
+#340000
+1$
+1>
+1?
+05
+0Z
+1K
+0J
+1W
+0.
+0)
+1*
+#380000
+0$
+0>
+0?
+15
+#420000
+1$
+1>
+1?
+05
+1X
+0K
+1]
+0W
+0*
+1+
+#460000
+0$
+0>
+0?
+15
+#500000
+1$
+1>
+1?
+05
+1Y
+0X
+1_
+0]
+13
+0+
+#540000
+0$
+0>
+0?
+15
+#580000
+1$
+1>
+1?
+05
+1Z
+0Y
+1J
+0_
+1.
+1)
+03
+#620000
+0$
+0>
+0?
+15
+#660000
+1$
+1>
+1?
+05
+0Z
+1K
+0J
+1W
+0.
+0)
+1*
+#700000
+0$
+0>
+0?
+15
+#740000
+1$
+1>
+1?
+05
+1X
+0K
+1]
+0W
+0*
+1+
+#780000
+0$
+0>
+0?
+15
+#820000
+1$
+1>
+1?
+05
+1Y
+0X
+1_
+0]
+13
+0+
+#860000
+0$
+0>
+0?
+15
+#900000
+1$
+1>
+1?
+05
+1Z
+0Y
+1J
+0_
+1.
+1)
+03
+#940000
+0$
+0>
+0?
+15
+#980000
+1$
+1>
+1?
+05
+0Z
+1K
+0J
+1W
+0.
+0)
+1*
+#1000000

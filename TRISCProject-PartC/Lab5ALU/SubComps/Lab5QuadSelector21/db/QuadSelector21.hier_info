@@ -1,0 +1,51 @@
+|QuadSelector21
+Y0 <= Selector21:inst.Y
+A0 => Selector21:inst.A
+B0 => Selector21:inst.B
+S => Selector21:inst.S
+S => Selector21:inst2.S
+S => Selector21:inst4.S
+S => Selector21:inst5.S
+Y1 <= Selector21:inst2.Y
+A1 => Selector21:inst2.A
+B1 => Selector21:inst2.B
+Y2 <= Selector21:inst4.Y
+A2 => Selector21:inst4.A
+B2 => Selector21:inst4.B
+Y3 <= Selector21:inst5.Y
+A3 => Selector21:inst5.A
+B3 => Selector21:inst5.B
+
+
+|QuadSelector21|Selector21:inst
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+S => inst3.IN1
+S => inst5.IN0
+A => inst.IN0
+
+
+|QuadSelector21|Selector21:inst2
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+S => inst3.IN1
+S => inst5.IN0
+A => inst.IN0
+
+
+|QuadSelector21|Selector21:inst4
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+S => inst3.IN1
+S => inst5.IN0
+A => inst.IN0
+
+
+|QuadSelector21|Selector21:inst5
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+S => inst3.IN1
+S => inst5.IN0
+A => inst.IN0
+
+

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ScottN\Google Drive\SchoolWork\UTA\Fall 2014\CSE 2441\Labs\Lab6\simulation\qsim
+vFlagRegister
+Z1 !s100 _dP6_zS]f60cCGSofO0Gj3
+Z2 IPe_OJV`zHA=^A2U65l0[O1
+Z3 VF_4PCh85<J8X^=Y`?c?@j2
+Z4 dC:\Users\ScottN\Google Drive\SchoolWork\UTA\2014Fall\CSE 2441\Labs\Lab6\FlagRegister\simulation\qsim
+Z5 w1415602797
+Z6 8FlagRegister.vo
+Z7 FFlagRegister.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|FlagRegister.vo|
+Z10 o-work work -O0
+Z11 n@flag@register
+!i10b 1
+!s85 0
+Z12 !s108 1415602798.964000
+Z13 !s107 FlagRegister.vo|
+!s101 -O0
+vFlagRegister_vlg_check_tst
+!i10b 1
+Z14 !s100 VJ@fD0djSf_9ST`U01I983
+Z15 I7DmM`@G:c^=;KVjC6mkg82
+Z16 V=]D92IHO9HAk97E]V_TkB0
+R4
+Z17 w1415602796
+Z18 8FlagRegister.vt
+Z19 FFlagRegister.vt
+L0 67
+R8
+r1
+!s85 0
+31
+Z20 !s108 1415602799.209000
+Z21 !s107 FlagRegister.vt|
+Z22 !s90 -work|work|FlagRegister.vt|
+!s101 -O0
+R10
+Z23 n@flag@register_vlg_check_tst
+vFlagRegister_vlg_sample_tst
+!i10b 1
+Z24 !s100 KV36Ad:>iz[aL<IOKX;gf2
+Z25 IE=OgQeiS=[[fW;mmD6gnN2
+Z26 V;GI4cNlbCSV=CS7Y4<1@A1
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@flag@register_vlg_sample_tst
+vFlagRegister_vlg_vec_tst
+!i10b 1
+Z28 !s100 TQA1gH@VCBP[9MiRG`bQ<0
+Z29 I0Vb9ZMJ?iTZG2VB8A[^B<2
+Z30 V;g[M61<NCgRMCA7fP>Ejh2
+R4
+R17
+R18
+R19
+Z31 L0 243
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@flag@register_vlg_vec_tst

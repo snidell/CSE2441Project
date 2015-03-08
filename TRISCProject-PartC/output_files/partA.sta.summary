@@ -1,0 +1,189 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'controllerTesting:inst6|controllerV2:inst|state.0110'
+Slack : -12.628
+TNS   : -41.177
+
+Type  : Slow Model Setup 'Accumulator:ACC|74193:inst2|25~1'
+Slack : -11.668
+TNS   : -23.246
+
+Type  : Slow Model Setup 'Accumulator:ACC|74193:inst2|26~1'
+Slack : -11.534
+TNS   : -30.845
+
+Type  : Slow Model Setup 'CLKcontroller'
+Slack : -10.181
+TNS   : -112.339
+
+Type  : Slow Model Setup 'controllerTesting:inst6|controllerV2:inst|state.0100'
+Slack : -6.251
+TNS   : -34.072
+
+Type  : Slow Model Hold 'Accumulator:ACC|74193:inst2|26~1'
+Slack : -5.400
+TNS   : -11.343
+
+Type  : Slow Model Hold 'CLKcontroller'
+Slack : -2.447
+TNS   : -19.693
+
+Type  : Slow Model Hold 'controllerTesting:inst6|controllerV2:inst|state.0110'
+Slack : -2.067
+TNS   : -3.157
+
+Type  : Slow Model Hold 'Accumulator:ACC|74193:inst2|25~1'
+Slack : -1.224
+TNS   : -1.224
+
+Type  : Slow Model Hold 'controllerTesting:inst6|controllerV2:inst|state.0100'
+Slack : 1.112
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'controllerTesting:inst6|controllerV2:inst|state.0110'
+Slack : -16.329
+TNS   : -51.580
+
+Type  : Slow Model Recovery 'Accumulator:ACC|74193:inst2|25~1'
+Slack : -15.369
+TNS   : -30.112
+
+Type  : Slow Model Recovery 'Accumulator:ACC|74193:inst2|26~1'
+Slack : -15.235
+TNS   : -36.610
+
+Type  : Slow Model Recovery 'controllerTesting:inst6|controllerV2:inst|state.0100'
+Slack : -6.549
+TNS   : -23.225
+
+Type  : Slow Model Removal 'Accumulator:ACC|74193:inst2|26~1'
+Slack : -4.766
+TNS   : -8.201
+
+Type  : Slow Model Removal 'controllerTesting:inst6|controllerV2:inst|state.0110'
+Slack : -1.433
+TNS   : -1.433
+
+Type  : Slow Model Removal 'Accumulator:ACC|74193:inst2|25~1'
+Slack : -0.590
+TNS   : -0.590
+
+Type  : Slow Model Removal 'controllerTesting:inst6|controllerV2:inst|state.0100'
+Slack : 3.871
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Accumulator:ACC|74193:inst2|26~1'
+Slack : -4.653
+TNS   : -56.046
+
+Type  : Slow Model Minimum Pulse Width 'CLKcontroller'
+Slack : -2.064
+TNS   : -160.151
+
+Type  : Slow Model Minimum Pulse Width 'Accumulator:ACC|74193:inst2|25~1'
+Slack : -1.282
+TNS   : -5.154
+
+Type  : Slow Model Minimum Pulse Width 'controllerTesting:inst6|controllerV2:inst|state.0100'
+Slack : -0.611
+TNS   : -9.776
+
+Type  : Slow Model Minimum Pulse Width 'controllerTesting:inst6|controllerV2:inst|state.0110'
+Slack : -0.611
+TNS   : -4.888
+
+Type  : Fast Model Setup 'controllerTesting:inst6|controllerV2:inst|state.0110'
+Slack : -4.596
+TNS   : -14.986
+
+Type  : Fast Model Setup 'Accumulator:ACC|74193:inst2|25~1'
+Slack : -4.273
+TNS   : -8.520
+
+Type  : Fast Model Setup 'Accumulator:ACC|74193:inst2|26~1'
+Slack : -4.261
+TNS   : -11.386
+
+Type  : Fast Model Setup 'CLKcontroller'
+Slack : -3.151
+TNS   : -35.690
+
+Type  : Fast Model Setup 'controllerTesting:inst6|controllerV2:inst|state.0100'
+Slack : -2.555
+TNS   : -11.882
+
+Type  : Fast Model Hold 'Accumulator:ACC|74193:inst2|26~1'
+Slack : -2.156
+TNS   : -4.611
+
+Type  : Fast Model Hold 'CLKcontroller'
+Slack : -1.640
+TNS   : -13.715
+
+Type  : Fast Model Hold 'controllerTesting:inst6|controllerV2:inst|state.0110'
+Slack : -1.071
+TNS   : -1.782
+
+Type  : Fast Model Hold 'Accumulator:ACC|74193:inst2|25~1'
+Slack : -0.641
+TNS   : -0.679
+
+Type  : Fast Model Hold 'controllerTesting:inst6|controllerV2:inst|state.0100'
+Slack : 0.413
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'controllerTesting:inst6|controllerV2:inst|state.0110'
+Slack : -6.057
+TNS   : -19.294
+
+Type  : Fast Model Recovery 'Accumulator:ACC|74193:inst2|25~1'
+Slack : -5.734
+TNS   : -11.261
+
+Type  : Fast Model Recovery 'Accumulator:ACC|74193:inst2|26~1'
+Slack : -5.722
+TNS   : -13.835
+
+Type  : Fast Model Recovery 'controllerTesting:inst6|controllerV2:inst|state.0100'
+Slack : -2.897
+TNS   : -9.677
+
+Type  : Fast Model Removal 'Accumulator:ACC|74193:inst2|26~1'
+Slack : -1.773
+TNS   : -3.051
+
+Type  : Fast Model Removal 'controllerTesting:inst6|controllerV2:inst|state.0110'
+Slack : -0.688
+TNS   : -0.688
+
+Type  : Fast Model Removal 'Accumulator:ACC|74193:inst2|25~1'
+Slack : -0.258
+TNS   : -0.258
+
+Type  : Fast Model Removal 'controllerTesting:inst6|controllerV2:inst|state.0100'
+Slack : 2.129
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Accumulator:ACC|74193:inst2|26~1'
+Slack : -2.003
+TNS   : -14.634
+
+Type  : Fast Model Minimum Pulse Width 'CLKcontroller'
+Slack : -2.000
+TNS   : -152.222
+
+Type  : Fast Model Minimum Pulse Width 'Accumulator:ACC|74193:inst2|25~1'
+Slack : -0.761
+TNS   : -2.522
+
+Type  : Fast Model Minimum Pulse Width 'controllerTesting:inst6|controllerV2:inst|state.0100'
+Slack : -0.500
+TNS   : -8.000
+
+Type  : Fast Model Minimum Pulse Width 'controllerTesting:inst6|controllerV2:inst|state.0110'
+Slack : -0.500
+TNS   : -4.000
+
+------------------------------------------------------------

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ScottN\Google Drive\SchoolWork\UTA\Fall 2014\CSE 2441\Labs\Lab5\Lab5Selector21\simulation\qsim
+vSelector21
+Z1 IkMWR5?I@=3ao?]FV`WeS_0
+Z2 VXA>R^SDJAjaDn7S`:aOaT2
+Z3 dC:\Users\ScottN\Google Drive\SchoolWork\UTA\Fall 2014\CSE 2441\Labs\Lab5\Lab5Selector21\simulation\qsim
+Z4 w1411790974
+Z5 8Selector21.vo
+Z6 FSelector21.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@selector21
+!i10b 1
+Z10 !s100 klHA2[lfc6A]1cE;geC7i3
+!s85 0
+Z11 !s108 1411790976.879000
+Z12 !s107 Selector21.vo|
+Z13 !s90 -work|work|Selector21.vo|
+!s101 -O0
+vSelector21_vlg_check_tst
+!i10b 1
+!s100 JLeFfkH=cT3@FDfJCQG[f2
+IUOQLPGGm;21Ua^R699LZY1
+Vfkf2?P;AEnL][eC0>H[HD0
+R3
+Z14 w1411790973
+Z15 8Selector21.vt
+Z16 FSelector21.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1411790977.038000
+Z18 !s107 Selector21.vt|
+Z19 !s90 -work|work|Selector21.vt|
+!s101 -O0
+R8
+n@selector21_vlg_check_tst
+vSelector21_vlg_sample_tst
+!i10b 1
+!s100 E78[1LkMO0J0mC4h63HXj3
+IKKL[K?i4fk=d1B9CdQF@H2
+VN`4K9Xd:?JAH]SdQe><6]2
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@selector21_vlg_sample_tst
+vSelector21_vlg_vec_tst
+!i10b 1
+!s100 f?eO9l5E6e=lW0=G1oi0o0
+I?gP8li=k6lA`SQiADB^L82
+Vg3RL8Scd1_J^RB@XAY7ZB3
+R3
+R14
+R15
+R16
+L0 156
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@selector21_vlg_vec_tst

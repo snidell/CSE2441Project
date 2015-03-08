@@ -1,0 +1,19 @@
+|FlagRegister
+QA <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+Clear => inst4.ACLR
+Load => inst.CLK
+Load => inst2.CLK
+Load => inst3.CLK
+Load => inst4.CLK
+A => inst.DATAIN
+QB <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.DATAIN
+QC <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+C => inst3.DATAIN
+QD <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.DATAIN
+
+

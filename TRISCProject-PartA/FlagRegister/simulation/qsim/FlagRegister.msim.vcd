@@ -1,0 +1,234 @@
+$comment
+	File created using the following command:
+		vcd file FlagRegister.msim.vcd -direction
+$end
+$date
+	Mon Nov 10 01:00:00 2014
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module FlagRegister_vlg_vec_tst $end
+$var reg 1 ! A $end
+$var reg 1 " B $end
+$var reg 1 # C $end
+$var reg 1 $ Clear $end
+$var reg 1 % D $end
+$var reg 1 & Load $end
+$var wire 1 ' QA $end
+$var wire 1 ( QB $end
+$var wire 1 ) QC $end
+$var wire 1 * QD $end
+$var wire 1 + sampler $end
+$scope module i1 $end
+$var wire 1 , gnd $end
+$var wire 1 - vcc $end
+$var wire 1 . unknown $end
+$var tri1 1 / devclrn $end
+$var tri1 1 0 devpor $end
+$var tri1 1 1 devoe $end
+$var wire 1 2 Load~combout $end
+$var wire 1 3 Load~clkctrl_outclk $end
+$var wire 1 4 A~combout $end
+$var wire 1 5 inst~feeder_combout $end
+$var wire 1 6 Clear~combout $end
+$var wire 1 7 Clear~clkctrl_outclk $end
+$var wire 1 8 inst~regout $end
+$var wire 1 9 B~combout $end
+$var wire 1 : inst2~feeder_combout $end
+$var wire 1 ; inst2~regout $end
+$var wire 1 < C~combout $end
+$var wire 1 = inst3~feeder_combout $end
+$var wire 1 > inst3~regout $end
+$var wire 1 ? D~combout $end
+$var wire 1 @ inst4~regout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x!
+x"
+x#
+0$
+x%
+0&
+0'
+0(
+0)
+0*
+x+
+0,
+1-
+x.
+1/
+10
+11
+02
+03
+x4
+x5
+06
+07
+08
+x9
+x:
+0;
+x<
+x=
+0>
+x?
+0@
+$end
+#60000
+0!
+0"
+0#
+0%
+04
+09
+0<
+0?
+0+
+05
+0:
+0=
+#80000
+1$
+1"
+1%
+16
+19
+1?
+17
+1+
+1:
+#100000
+1&
+12
+13
+0+
+1@
+1;
+1*
+1(
+#120000
+0"
+0%
+09
+0?
+1+
+0:
+#140000
+0&
+02
+03
+0+
+#160000
+1!
+1#
+14
+1<
+1+
+15
+1=
+#180000
+1&
+12
+13
+0+
+0@
+1>
+0;
+18
+0*
+1)
+0(
+1'
+#200000
+0!
+0#
+04
+0<
+1+
+05
+0=
+#220000
+0&
+02
+03
+0+
+#240000
+1"
+1%
+1!
+1#
+19
+1?
+14
+1<
+1+
+1:
+15
+1=
+#260000
+1&
+12
+13
+0+
+1@
+1;
+1*
+1(
+#280000
+0"
+0%
+0!
+0#
+09
+0?
+04
+0<
+1+
+0:
+05
+0=
+#300000
+0&
+02
+03
+0+
+#340000
+1&
+12
+13
+1+
+0@
+0>
+0;
+08
+0*
+0)
+0(
+0'
+#380000
+0&
+02
+03
+0+
+#920000
+0$
+06
+07
+1+
+#980000
+1"
+1%
+19
+1?
+0+
+1:
+#1000000

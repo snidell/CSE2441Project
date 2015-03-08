@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/ScottN/Google Drive/SchoolWork/UTA/Fall 2014/CSE 2441/Labs/Lab5/Lab5Selector21/Selector21.bdf
+source_file = 1, C:/Users/ScottN/Google Drive/SchoolWork/UTA/Fall 2014/CSE 2441/Labs/Lab5/Lab5Selector21/Waveform.vwf
+source_file = 1, C:/Users/ScottN/Google Drive/SchoolWork/UTA/Fall 2014/CSE 2441/Labs/Lab5/Lab5Selector21/db/Selector21.cbx.xml
+design_name = Selector21
+instance = comp, \S~I , S, Selector21, 1
+instance = comp, \B~I , B, Selector21, 1
+instance = comp, \A~I , A, Selector21, 1
+instance = comp, \inst4~0 , inst4~0, Selector21, 1
+instance = comp, \Y~I , Y, Selector21, 1

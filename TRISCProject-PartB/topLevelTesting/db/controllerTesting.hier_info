@@ -1,0 +1,88 @@
+|controllerTesting
+C0 <= controllerV2:inst.C0
+CLK => controllerV2:inst.clk
+CLR => inst3.IN0
+A => opCodeDecoder:inst2.A
+B => opCodeDecoder:inst2.B
+C => opCodeDecoder:inst2.C
+D => opCodeDecoder:inst2.D
+C2 <= controllerV2:inst.C2
+C3 <= controllerV2:inst.C3
+C4 <= controllerV2:inst.C4
+C42 <= controllerV2:inst.C42
+C7 <= controllerV2:inst.C7
+C8 <= controllerV2:inst.C8
+C9 <= controllerV2:inst.C9
+C1 <= controllerV2:inst.C1
+C5 <= controllerV2:inst.C5
+C6 <= controllerV2:inst.C6
+C10 <= controllerV2:inst.C10
+C11 <= controllerV2:inst.C11
+Jump <= opCodeDecoder:inst2.JMP
+
+
+|controllerTesting|controllerV2:inst
+clk => state~1.DATAIN
+CLR => state~3.DATAIN
+INCA => state.OUTPUTSELECT
+INCA => state.OUTPUTSELECT
+INCA => state.OUTPUTSELECT
+INCA => state.OUTPUTSELECT
+INCA => state.DATAB
+CLRA => state.OUTPUTSELECT
+CLRA => state.OUTPUTSELECT
+CLRA => state.OUTPUTSELECT
+CLRA => state.DATAA
+LDA => state.OUTPUTSELECT
+LDA => state.OUTPUTSELECT
+LDA => state.OUTPUTSELECT
+LDA => state.OUTPUTSELECT
+LDA => state.OUTPUTSELECT
+LDA => state.OUTPUTSELECT
+LDA => state.DATAB
+STA => state.OUTPUTSELECT
+STA => state.OUTPUTSELECT
+STA => state.OUTPUTSELECT
+STA => state.OUTPUTSELECT
+STA => state.OUTPUTSELECT
+STA => state.DATAA
+ADD => state.OUTPUTSELECT
+ADD => state.OUTPUTSELECT
+ADD => state.DATAA
+JMP => state.DATAA
+JMP => state.DATAA
+JMP => state.DATAA
+JMP => state.DATAA
+C0 <= C0$latch.DB_MAX_OUTPUT_PORT_TYPE
+C2 <= C2$latch.DB_MAX_OUTPUT_PORT_TYPE
+C3 <= C3$latch.DB_MAX_OUTPUT_PORT_TYPE
+C4 <= C4$latch.DB_MAX_OUTPUT_PORT_TYPE
+C42 <= C42$latch.DB_MAX_OUTPUT_PORT_TYPE
+C7 <= C7$latch.DB_MAX_OUTPUT_PORT_TYPE
+C8 <= C8$latch.DB_MAX_OUTPUT_PORT_TYPE
+C9 <= C9$latch.DB_MAX_OUTPUT_PORT_TYPE
+C1 <= <GND>
+C5 <= C5$latch.DB_MAX_OUTPUT_PORT_TYPE
+C6 <= <GND>
+C10 <= C10$latch.DB_MAX_OUTPUT_PORT_TYPE
+C11 <= C11$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controllerTesting|opCodeDecoder:inst2
+A => Decoder0.IN0
+B => Decoder0.IN1
+C => Decoder0.IN2
+D => Decoder0.IN3
+LDA <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+STA <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+ADD <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+SUB <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+XOR <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+INC <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+CLR <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+JMP <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+JPZ <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+JPN <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HLT <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

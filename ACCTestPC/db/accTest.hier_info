@@ -1,0 +1,74 @@
+|accTest
+Aout0 <= Accumulator:inst4.ACout0
+ALUMDRsel => Accumulator:inst4.ALU/MDR
+ALU0 => Accumulator:inst4.ALU0
+ADDR0 => Accumulator:inst4.MDR0
+ALU1 => Accumulator:inst4.ALU1
+ADDR1 => Accumulator:inst4.MDR1
+ALU2 => Accumulator:inst4.ALU2
+ADDR2 => Accumulator:inst4.MDR2
+ALU3 => Accumulator:inst4.ALU3
+ADDR3 => Accumulator:inst4.MDR3
+LoadACC => Accumulator:inst4.LoadAcc
+IncACC => Accumulator:inst4.IncAcc
+ClearACC => Accumulator:inst4.ClearACC
+Aout1 <= Accumulator:inst4.ACout1
+Aout2 <= Accumulator:inst4.Acout2
+Aout3 <= Accumulator:inst4.Acout3
+
+
+|accTest|Accumulator:inst4
+ACout0 <= 74193:inst2.QA
+ALU0 => 74157:inst.A1
+MDR0 => 74157:inst.B1
+ALU/MDR => inst1.IN0
+MDR1 => 74157:inst.B2
+ALU2 => 74157:inst.A3
+MDR2 => 74157:inst.B3
+ALU1 => 74157:inst.A2
+MDR3 => 74157:inst.B4
+ALU3 => 74157:inst.A4
+ClearACC => 74193:inst2.CLR
+IncAcc => inst5.IN0
+LoadAcc => inst6.IN0
+ACout1 <= 74193:inst2.QB
+Acout2 <= 74193:inst2.QC
+Acout3 <= 74193:inst2.QD
+
+
+|accTest|Accumulator:inst4|74193:inst2
+BON <= 28.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 44.IN0
+LDN => 43.IN0
+B => 53.IN2
+A => 52.IN2
+DN => 90.IN0
+UP => 89.IN0
+C => 54.IN2
+D => 55.IN2
+CON <= 27.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 23.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 24.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 25.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 26.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accTest|Accumulator:inst4|74157:inst
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+

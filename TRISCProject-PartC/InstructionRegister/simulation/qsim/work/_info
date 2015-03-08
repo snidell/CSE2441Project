@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ScottN\Google Drive\SchoolWork\UTA\2014Fall\CSE 2441\Projects\TRISCProject-PartC\InstructionRegister\simulation\qsim
+vInstructionRegister
+Z1 !s100 PWYohCbPoHB0_iYTh4zhQ2
+Z2 IQ3mH<``h?UaR^L[0ldlb_1
+Z3 VWCoeCRQij:hAe[508za501
+Z4 dC:\Users\ScottN\Google Drive\SchoolWork\UTA\2014Fall\CSE 2441\Projects\TRISCProject-PartC\InstructionRegister\simulation\qsim
+Z5 w1417341638
+Z6 8InstructionRegister.vo
+Z7 FInstructionRegister.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|InstructionRegister.vo|
+Z10 o-work work -O0
+Z11 n@instruction@register
+!i10b 1
+!s85 0
+Z12 !s108 1417341639.113000
+Z13 !s107 InstructionRegister.vo|
+!s101 -O0
+vInstructionRegister_vlg_check_tst
+!i10b 1
+Z14 !s100 VMXFcTTA>czlF^0n]54UN3
+Z15 IV13g[bD2KUo?>YHBED<Z32
+Z16 Vnm@QIB?nS@@3i5PnzFzne0
+R4
+Z17 w1417341637
+Z18 8InstructionRegister.vt
+Z19 FInstructionRegister.vt
+L0 67
+R8
+r1
+!s85 0
+31
+Z20 !s108 1417341639.347000
+Z21 !s107 InstructionRegister.vt|
+Z22 !s90 -work|work|InstructionRegister.vt|
+!s101 -O0
+R10
+Z23 n@instruction@register_vlg_check_tst
+vInstructionRegister_vlg_sample_tst
+!i10b 1
+Z24 !s100 4h6^oK2_XzF;8KcEo7GcR2
+Z25 IE_lgnI6z=F[g[3=fFd^D[0
+Z26 VM5WGzH??G><lh^0d>BKHa3
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@instruction@register_vlg_sample_tst
+vInstructionRegister_vlg_vec_tst
+!i10b 1
+!s100 aljT?UzOo38ldX@Zkz`km3
+IXN>[6EYk4;TCL]0gn8YKz0
+Z28 V>`E@6c_592^]=n:U19BKY2
+R4
+R17
+R18
+R19
+Z29 L0 243
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@instruction@register_vlg_vec_tst
